@@ -1,0 +1,104 @@
+(function () {
+  var form = document.getElementById("cadastro");
+  var status = document.getElementById("form-status");
+  var submit = document.getElementById("enviar");
+  if (!form || !status || !submit) return;
+
+  var ENDPOINT = "https://formsubmit.co/ajax/orlando.albertino@ufes.br";
+
+  function setStatus(state, text) {
+    status.dataset.state = state;
+    status.textContent = text;
+  }
+
+  function collectedChecks(name) {
+    return Array.prototype.slice
+      .call(form.querySelectorAll('input[name="' + name + '"]:checked'))
+      .map(function (el) {
+        return el.value;
+      })
+      .join(", ");
+  }
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    if (form.website && form.website.value) return;
+
+    var payload = {
+      _subject: "Cadastro editorial — revista experimental DLT13973",
+      _template: "box",
+      _captcha: "false",
+      _honey: form.website ? form.website.value : "",
+      nome_completo: form.nome_completo.value.trim(),
+      nome_assinatura: form.nome_assinatura.value.trim(),
+      email: form.email.value.trim(),
+      whatsapp: form.whatsapp.value.trim(),
+      vinculo: form.vinculo.value,
+      matricula: form.matricula.value.trim(),
+      equipe_regional: form.equipe_regional.value,
+      oficios: collectedChecks("oficios"),
+      idiomas: form.idiomas.value.trim(),
+      proposta_nome: form.proposta_nome.value.trim(),
+      interesse: form.interesse.value.trim(),
+      lgpd: form.lgpd.checked ? "sim" : "nao",
+    };
+
+    submit.disabled = true;
+    setStatus("wait", "Enviando o cadastro…");
+
+    fetch(ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+      .then(function (res) {
+        return res.json().then(function (data) {
+          return { ok: res.ok, data: data };
+        });
+      })
+      .then(function (result) {
+        if (!result.ok) throw new Error("Falha no envio");
+        form.reset();
+        setStatus(
+          "ok",
+          "Cadastro recebido. Se for o primeiro envio desta temporada, o professor confirma o canal de e-mail e a ficha entra na redação em seguida."
+        );
+      })
+      .catch(function () {
+        var body = [
+          "Nome: " + payload.nome_completo,
+          "Assinatura: " + payload.nome_assinatura,
+          "E-mail: " + payload.email,
+          "WhatsApp: " + payload.whatsapp,
+          "Vínculo: " + payload.vinculo,
+          "Matrícula: " + payload.matricula,
+          "Equipe: " + payload.equipe_regional,
+          "Ofícios: " + payload.oficios,
+          "Idiomas: " + payload.idiomas,
+          "Proposta de nome: " + payload.proposta_nome,
+          "",
+          payload.interesse,
+        ].join("\n");
+        var mailto =
+          "mailto:orlando.albertino@ufes.br?subject=" +
+          encodeURIComponent("Cadastro editorial — revista experimental DLT13973") +
+          "&body=" +
+          encodeURIComponent(body);
+        setStatus(
+          "err",
+          "Não foi possível enviar pelo formulário agora. Use o e-mail da disciplina — o rascunho da sua ficha já vai no link a seguir."
+        );
+        status.innerHTML =
+          status.textContent +
+          ' <a href="' +
+          mailto +
+          '">Abrir e-mail para orlando.albertino@ufes.br</a>.';
+      })
+      .finally(function () {
+        submit.disabled = false;
+      });
+  });
+})();

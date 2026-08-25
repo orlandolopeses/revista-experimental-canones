@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cadastro de colaboradoras e colaboradores editoriais da revista experimental de crítica DLT13973.">
+  <title>Colaborar — em aberto { revista experimental de crítica }</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <div class="wrap">
+    <p class="kicker-bar">UFES · Departamento de Letras · DLT13973 · T01 · 2026/2</p>
+    <header class="masthead">
+      <a class="wordmark" href="index.html">em aberto</a>
+      <p class="tagline"><span>{</span> a revista experimental de crítica <span>}</span></p>
+    </header>
+    <nav class="sections" aria-label="Seções">
+      <a href="index.html">Edição zero</a>
+      <a href="pecas/o-que-pode-a-critica.html">Crítica</a>
+      <a href="equipes.html">Equipes</a>
+      <a href="colaborar.html" aria-current="page">Colaborar</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+
+    <header class="page-intro">
+      <p class="eyebrow">Redação</p>
+      <h1 class="page-title">Cadastro de colaboradores editoriais</h1>
+      <p class="deck">A revista ainda não tem nome, mas já tem ofício. Esta ficha organiza quem escreve, edita, revisa, traduz, diagrama e monitora publicações de crítica — por região, como combinado no grupo.</p>
+    </header>
+
+    <form class="cadastro" id="cadastro" novalidate>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="field">
+        <label for="nome_completo">Nome completo</label>
+        <input id="nome_completo" name="nome_completo" type="text" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="nome_assinatura">Nome como quer assinar</label>
+        <input id="nome_assinatura" name="nome_assinatura" type="text" required>
+        <span class="hint">O byline da crítica. Pode ser o nome civil, um nome social ou uma forma abreviada.</span>
+      </div>
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="whatsapp">WhatsApp</label>
+        <input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="+55 27 …">
+      </div>
+      <div class="field">
+        <label for="vinculo">Vínculo com a disciplina</label>
+        <select id="vinculo" name="vinculo" required>
+          <option value="" selected disabled>Escolha</option>
+          <option>Graduação em Letras — matrícula na DLT13973</option>
+          <option>Outro curso da UFES — matrícula na DLT13973</option>
+          <option>Estudante especial / ouvinte</option>
+          <option>Colaboração externa (convite da redação)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="matricula">Matrícula UFES (se houver)</label>
+        <input id="matricula" name="matricula" type="text" inputmode="numeric" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="equipe_regional">Equipe de monitoramento</label>
+        <select id="equipe_regional" name="equipe_regional" required>
+          <option value="" selected disabled>Região da enquete do grupo</option>
+          <option>América do Sul</option>
+          <option>América do Norte</option>
+          <option>Europa</option>
+          <option>África</option>
+          <option>Ásia</option>
+          <option>Oceania</option>
+          <option>Ainda não escolhi / quero trocar</option>
+        </select>
+        <span class="hint">As equipes acompanham publicações de crítica literária na região. Pode coincidir ou não com o recorte do seu texto.</span>
+      </div>
+      <fieldset class="field">
+        <legend class="fieldset-legend">Ofício na redação</legend>
+        <div class="checks">
+          <label><input type="checkbox" name="oficios" value="Crítica"> Crítica (texto próprio)</label>
+          <label><input type="checkbox" name="oficios" value="Edição"> Edição de textos alheios</label>
+          <label><input type="checkbox" name="oficios" value="Revisão"> Revisão</label>
+          <label><input type="checkbox" name="oficios" value="Tradução"> Tradução</label>
+          <label><input type="checkbox" name="oficios" value="Monitoramento"> Monitoramento de publicações</label>
+          <label><input type="checkbox" name="oficios" value="Design"> Design / diagramação</label>
+          <label><input type="checkbox" name="oficios" value="Redes"> Redes e circulação</label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="idiomas">Idiomas de leitura</label>
+        <input id="idiomas" name="idiomas" type="text" placeholder="português, inglês, espanhol…">
+      </div>
+      <div class="field">
+        <label for="proposta_nome">Proposta de nome para a revista</label>
+        <input id="proposta_nome" name="proposta_nome" type="text">
+        <span class="hint">Opcional, mas bem-vindo. A revista ainda não foi batizada.</span>
+      </div>
+      <div class="field">
+        <label for="interesse">O que você quer fazer nesta redação</label>
+        <textarea id="interesse" name="interesse" required placeholder="Um recorte, um problema, uma revista que você já monitora, um gesto crítico que pretende ensaiar."></textarea>
+      </div>
+      <div class="field">
+        <label class="consent">
+          <input id="lgpd" name="lgpd" type="checkbox" required>
+          Autorizo o uso destes dados apenas para organizar a redação da disciplina DLT13973 (2026/2). Não serão publicados no site nem cedidos a terceiros.
+        </label>
+      </div>
+      <button type="submit" id="enviar">Enviar cadastro</button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+  <footer class="site wrap">
+    <p>UFES · DLL · DLT13973 · Cânones da crítica internacional</p>
+    <p>© <span id="ano">2026</span> · nome em disputa</p>
+  </footer>
+  <script src="js/site.js"></script>
+  <script src="js/colaborar.js"></script>
+</body>
+</html>
