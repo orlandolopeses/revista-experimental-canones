@@ -51,46 +51,66 @@ a:hover {
 
 .kicker-bar {
   border-bottom: 1px solid var(--rule);
-  padding: 0.55rem 0;
+  padding: 0.65rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.kicker-logo {
+  flex: 0 0 auto;
+  text-decoration: none;
+}
+
+.kicker-logo img {
+  display: block;
+  height: 52px;
+  width: auto;
+}
+
+.kicker-text {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+}
+
+.kicker-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+.kicker-meta {
   font-size: 0.68rem;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: var(--muted);
 }
 
 .masthead {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 1.5rem;
-  padding: 1.6rem 0 1.25rem;
+  padding: 1.45rem 0 1.2rem;
   flex-wrap: wrap;
 }
 
 .wordmark {
   font-family: var(--sans);
   font-weight: 700;
-  font-size: clamp(1.8rem, 4.2vw, 2.75rem);
+  font-size: clamp(1.45rem, 3.4vw, 2.2rem);
   letter-spacing: -0.03em;
-  line-height: 1;
+  line-height: 1.08;
   text-decoration: none;
+  max-width: 16ch;
 }
 
-.wordmark em {
-  font-style: italic;
-  font-weight: 500;
-  letter-spacing: 0;
-}
-
-.tagline {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.05rem;
-  color: var(--ink);
-}
-
-.tagline span {
-  font-style: normal;
-  opacity: 0.55;
+.wordmark span {
+  display: block;
+  font-weight: 700;
 }
 
 nav.sections {
@@ -184,20 +204,24 @@ nav.sections a[aria-current="page"] {
 .cover {
   margin: 1.4rem 0 0;
   border: 1px solid var(--rule);
-  min-height: 220px;
-  display: grid;
-  place-items: center;
-  padding: 2rem 1.5rem;
-  text-align: center;
+  padding: 0;
+  min-height: 0;
+  display: block;
+  text-align: left;
 }
 
-.cover blockquote {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  line-height: 1.25;
-  margin: 0;
-  max-width: 22ch;
+.cover img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.cover figcaption {
+  font-size: 0.72rem;
+  color: var(--muted);
+  padding: 0.45rem 0.15rem 0.15rem;
+  font-family: var(--sans);
 }
 
 .rail h2 {
