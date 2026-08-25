@@ -60,14 +60,23 @@
         });
       })
       .then(function (result) {
-        if (!result.ok) throw new Error("Falha no envio");
+        var data = result.data || {};
+        var activated = data.success === true || data.success === "true";
+        if (!result.ok || !activated) {
+          var pending =
+            String(data.message || "").toLowerCase().indexOf("activation") !== -1;
+          if (pending) {
+            throw new Error("activation");
+          }
+          throw new Error("Falha no envio");
+        }
         form.reset();
         setStatus(
           "ok",
-          "Cadastro recebido. Se for o primeiro envio desta temporada, o professor confirma o canal de e-mail e a ficha entra na redação em seguida."
+          "Cadastro recebido. A ficha chegou à redação."
         );
       })
-      .catch(function () {
+      .catch(function (err) {
         var body = [
           "Nome: " + payload.nome_completo,
           "Assinatura: " + payload.nome_assinatura,
@@ -87,12 +96,13 @@
           encodeURIComponent("Cadastro editorial — revista experimental DLT13973") +
           "&body=" +
           encodeURIComponent(body);
-        setStatus(
-          "err",
-          "Não foi possível enviar pelo formulário agora. Use o e-mail da disciplina — o rascunho da sua ficha já vai no link a seguir."
-        );
+        var prefix =
+          err && err.message === "activation"
+            ? "O canal de e-mail da redação ainda está sendo ativado. Enquanto isso, envie pelo link a seguir."
+            : "Não foi possível enviar pelo formulário agora. Use o e-mail da disciplina — o rascunho da sua ficha já vai no link a seguir.";
+        status.dataset.state = "err";
         status.innerHTML =
-          status.textContent +
+          prefix +
           ' <a href="' +
           mailto +
           '">Abrir e-mail para orlando.albertino@ufes.br</a>.';
