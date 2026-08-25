@@ -781,14 +781,16 @@ footer.site {
     border-bottom: 0;
   }
 
+  nav.sections {
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+
   nav.sections a:first-child,
   nav.sections a:last-child,
   nav.sections a {
-    padding: 0.8rem 0.95rem 0.75rem;
-    border-right: 1px solid var(--hair);
-  }
-
-  nav.sections a:first-child {
-    padding-left: 0;
+    padding: 0.55rem 0.9rem 0.55rem 0;
+    margin-right: 0.35rem;
+    border-right: 0;
   }
 }
