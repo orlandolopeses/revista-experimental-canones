@@ -474,6 +474,58 @@ nav.sections.is-stuck {
   max-width: 42rem;
 }
 
+.notes {
+  margin: 1.2rem 0 3rem;
+  border-top: 1px solid var(--rule);
+}
+
+.note-row {
+  display: grid;
+  grid-template-columns: 8.2rem minmax(0, 1fr);
+  gap: 1.4rem 1.8rem;
+  padding: 1.2rem 0 1.25rem;
+  border-bottom: 1px solid var(--hair);
+}
+
+.note-row time {
+  font-size: 0.78rem;
+  color: var(--muted);
+  padding-top: 0.35rem;
+}
+
+.note-row h2 {
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  line-height: 1.18;
+  margin: 0 0 0.35rem;
+}
+
+.note-row h2 a {
+  text-decoration: none;
+}
+
+.note-row h2 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.note-row p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.note-kicker {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 0.35rem;
+  color: var(--ink);
+}
+
 form.cadastro {
   max-width: 40rem;
   padding: 0.6rem 0 3.4rem;
@@ -766,8 +818,13 @@ footer.site {
   .grid-3,
   .teams,
   .redacao,
-  .footer-inner {
+  .footer-inner,
+  .note-row {
     grid-template-columns: 1fr;
+  }
+
+  .note-row time {
+    padding-top: 0;
   }
 
   .team,
