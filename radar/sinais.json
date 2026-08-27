@@ -1,0 +1,2624 @@
+{
+  "gerado": "2026-08-27T11:32:57+00:00",
+  "revista": "Revista Experimental de Crítica Literária",
+  "disciplina": "DLT13973 · Cânones da crítica internacional",
+  "fontes": 31,
+  "fontes_ok": 26,
+  "fontes_sem_rss": 5,
+  "clippings_n": 129,
+  "sinais": [
+    {
+      "tipo": "cobertura",
+      "continente": "america-do-sul",
+      "titulo": "América do Sul: 24 peças",
+      "texto": "Destaque: Quatro Cinco Um — Lena Dunham e as dores da fama"
+    },
+    {
+      "tipo": "cobertura",
+      "continente": "america-do-norte",
+      "titulo": "América do Norte: 36 peças",
+      "texto": "Destaque: Letras Libres — Daniel Monroy Cuevas: el tiempo y el territorio"
+    },
+    {
+      "tipo": "cobertura",
+      "continente": "europa",
+      "titulo": "Europa: 13 peças",
+      "texto": "Destaque: The Guardian Books — Kolkhoz by Emmanuel Carrère review – intricate portrait of an elite French family"
+    },
+    {
+      "tipo": "cobertura",
+      "continente": "africa",
+      "titulo": "África: 24 peças",
+      "texto": "Destaque: Brittle Paper — Abebi AfroNonfiction Foundation Launches Inaugural Continental Fellowship for African Women Writers | Closes September 12"
+    },
+    {
+      "tipo": "cobertura",
+      "continente": "asia",
+      "titulo": "Ásia: 19 peças",
+      "texto": "Destaque: Asymptote — What’s New in Translation: August 2026"
+    },
+    {
+      "tipo": "cobertura",
+      "continente": "oceania",
+      "titulo": "Oceania: 13 peças",
+      "texto": "Destaque: Overland — “Man below, losing hope”: Adam Ouston’s Mine"
+    },
+    {
+      "tipo": "tecnico",
+      "continente": "",
+      "titulo": "Veículos do plano sem RSS público",
+      "texto": "Monitorar à mão: Los Angeles Review of Books; Times Literary Supplement; Sydney Review of Books; Australian Book Review."
+    },
+    {
+      "tipo": "tecnico",
+      "continente": "",
+      "titulo": "Feeds que não abriram",
+      "texto": "Australian Book Review (sem-rss); Los Angeles Review of Books (sem-rss); Suplemento Pernambuco (sem-rss); Sydney Review of Books (sem-rss); Times Literary Supplement (sem-rss)"
+    },
+    {
+      "tipo": "gesto",
+      "continente": "asia",
+      "titulo": "Tradução em circulação",
+      "texto": "3 peças acionam deslocar/traduzir. A primeira: What’s New in Translation: August 2026."
+    },
+    {
+      "tipo": "gesto",
+      "continente": "asia",
+      "titulo": "Máquina de prêmio",
+      "texto": "11 peças nomeiam prize/award/prêmio. Valor se fabrica também assim."
+    }
+  ],
+  "por_fonte": [
+    {
+      "id": "451-mhz",
+      "nome": "451 MHz",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "four-columns",
+      "nome": "4Columns",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "africa-is-a-country",
+      "nome": "Africa Is a Country",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "asymptote",
+      "nome": "Asymptote",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "abr",
+      "nome": "Australian Book Review",
+      "ok": false,
+      "motivo": "sem-rss",
+      "n": 0
+    },
+    {
+      "id": "brittle-paper",
+      "nome": "Brittle Paper",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "chimurenga",
+      "nome": "Chimurenga Chronic",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "cult",
+      "nome": "CULT",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "el-pais-cultura",
+      "nome": "El País Cultura",
+      "ok": true,
+      "motivo": null,
+      "n": 1
+    },
+    {
+      "id": "himal",
+      "nome": "Himal Southasian",
+      "ok": true,
+      "motivo": null,
+      "n": 1
+    },
+    {
+      "id": "kyoto-journal",
+      "nome": "Kyoto Journal",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "letras-libres",
+      "nome": "Letras Libres",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "lithub",
+      "nome": "Literary Hub",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "lrb",
+      "nome": "London Review of Books",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "larb",
+      "nome": "Los Angeles Review of Books",
+      "ok": false,
+      "motivo": "sem-rss",
+      "n": 0
+    },
+    {
+      "id": "meanjin",
+      "nome": "Meanjin",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "mekong-review",
+      "nome": "Mekong Review",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "nplusone",
+      "nome": "n+1",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "otra-parte",
+      "nome": "Otra Parte",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "overland",
+      "nome": "Overland",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "piaui",
+      "nome": "Piauí",
+      "ok": true,
+      "motivo": "vazio-apos-filtro",
+      "n": 0
+    },
+    {
+      "id": "public-books",
+      "nome": "Public Books",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "quatro-cinco-um",
+      "nome": "Quatro Cinco Um",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "pernambuco",
+      "nome": "Suplemento Pernambuco",
+      "ok": false,
+      "motivo": "sem-rss",
+      "n": 0
+    },
+    {
+      "id": "sydney-review",
+      "nome": "Sydney Review of Books",
+      "ok": false,
+      "motivo": "sem-rss",
+      "n": 0
+    },
+    {
+      "id": "guardian-books",
+      "nome": "The Guardian Books",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "jrb",
+      "nome": "The Johannesburg Review of Books",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "nyrb",
+      "nome": "The New York Review of Books",
+      "ok": true,
+      "motivo": null,
+      "n": 6
+    },
+    {
+      "id": "the-spinoff",
+      "nome": "The Spinoff",
+      "ok": true,
+      "motivo": null,
+      "n": 1
+    },
+    {
+      "id": "white-review",
+      "nome": "The White Review",
+      "ok": true,
+      "motivo": "vazio-apos-filtro",
+      "n": 0
+    },
+    {
+      "id": "tls",
+      "nome": "Times Literary Supplement",
+      "ok": false,
+      "motivo": "sem-rss",
+      "n": 0
+    }
+  ],
+  "clippings": [
+    {
+      "id": "bcbd83e7f004",
+      "fonte_id": "asymptote",
+      "fonte": "Asymptote",
+      "continente": "asia",
+      "pais": "internacional",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "What’s New in Translation: August 2026",
+      "url": "https://www.asymptotejournal.com/blog/2026/08/24/whats-new-in-translation-august-2026/",
+      "resumo": "This week, our reviewers introduce eight titles that range from political thought to chimeric fictions. Amongst them are a collection of absurdist plays from an Egyptian Nobel laureate; a novel reckoning with the ongoing scars of the Rwandan genocide; a collection of probing,…",
+      "data": "2026-08-24",
+      "gestos": [
+        "avaliar",
+        "deslocar",
+        "disputar-valor"
+      ],
+      "score": 29
+    },
+    {
+      "id": "3a017ab1cbdf",
+      "fonte_id": "guardian-books",
+      "fonte": "The Guardian Books",
+      "continente": "europa",
+      "pais": "Reino Unido",
+      "lingua": "en",
+      "canal": "caderno",
+      "no_plano": false,
+      "titulo": "Kolkhoz by Emmanuel Carrère review – intricate portrait of an elite French family",
+      "url": "https://www.theguardian.com/books/2026/aug/27/kolkhoz-by-emmanuel-carrere-review-intricate-portrait-of-an-elite-french-family",
+      "resumo": "The author of The Adversary and Yoga unearths a history that includes the Nazis, Russia, and the Académie Française When Emmanuel Carrère’s mother, Hélène, died in 2023, at the age of 94, President Macron spoke at her memorial. She had been “perpetual secretary” of the Académie…",
+      "data": "2026-08-27",
+      "gestos": [
+        "avaliar",
+        "descrever",
+        "historicizar"
+      ],
+      "score": 29
+    },
+    {
+      "id": "3891a0becd3d",
+      "fonte_id": "guardian-books",
+      "fonte": "The Guardian Books",
+      "continente": "europa",
+      "pais": "Reino Unido",
+      "lingua": "en",
+      "canal": "caderno",
+      "no_plano": false,
+      "titulo": "The Disappearers by Marlon James review – a scorching exposé of homophobia in Jamaica",
+      "url": "https://www.theguardian.com/books/2026/aug/24/the-disappearers-by-marlon-james-review-a-scorching-expose-of-homophobia-in-jamaica",
+      "resumo": "This Booker-listed epic set in Aids-era Kingston is a triumph – bitter, bawdy and ravishingly queer “A sense of sweep,” replied Marlon James, when asked what moves him most in literature. “Sweep isn’t just about external journeys, but internal as well. It can be over years and…",
+      "data": "2026-08-24",
+      "gestos": [
+        "avaliar",
+        "disputar-valor"
+      ],
+      "score": 26
+    },
+    {
+      "id": "3bc572d12071",
+      "fonte_id": "guardian-books",
+      "fonte": "The Guardian Books",
+      "continente": "europa",
+      "pais": "Reino Unido",
+      "lingua": "en",
+      "canal": "caderno",
+      "no_plano": false,
+      "titulo": "Triage by Claudia Rankine review – how should we respond to the world’s atrocities?",
+      "url": "https://www.theguardian.com/books/2026/aug/25/triage-by-claudia-rankine-review-how-should-we-respond-to-the-worlds-atrocities",
+      "resumo": "The American poet and essayist weaves memoir, fiction, criticism and lyrical lament into a tale of friendship in an age of existential crisis “Any resemblance to actual persons, living or dead, or actual events is purely coincidental,” writes the multi-award winning…",
+      "data": "2026-08-25",
+      "gestos": [
+        "avaliar",
+        "disputar-valor"
+      ],
+      "score": 26
+    },
+    {
+      "id": "50976c1878c9",
+      "fonte_id": "guardian-books",
+      "fonte": "The Guardian Books",
+      "continente": "europa",
+      "pais": "Reino Unido",
+      "lingua": "en",
+      "canal": "caderno",
+      "no_plano": false,
+      "titulo": "Passage by Colin Thubron review – mortality and memory in a gem of a novel",
+      "url": "https://www.theguardian.com/books/2026/aug/26/passage-by-colin-thubron-review-mortality-and-memory-in-a-gem-of-a-novel",
+      "resumo": "A terminally ill woman makes a final trip to Egypt in an exquisitely wrought portrait of end-of-life reckoning Virginia Woolf said of Middlemarch that it is one of the few English novels written for grown-up people. In the shallow and infantilising age through which we are…",
+      "data": "2026-08-26",
+      "gestos": [
+        "avaliar",
+        "descrever"
+      ],
+      "score": 26
+    },
+    {
+      "id": "91c9696166ca",
+      "fonte_id": "overland",
+      "fonte": "Overland",
+      "continente": "oceania",
+      "pais": "Austrália",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "“Man below, losing hope”: Adam Ouston’s Mine",
+      "url": "https://overland.org.au/2026/08/man-below-losing-hope-adam-oustons-mine/",
+      "resumo": "The single-sentence novel is having a moment. In the past three years alone, two Nobels (Fosse, Krasznahorkai) and a Pulitzer (Kraus) have been awarded to authors who have written them. While it might seem strange for such a form to be resonating in our age of depleted…",
+      "data": "2026-08-24",
+      "gestos": [
+        "disputar-valor"
+      ],
+      "score": 23
+    },
+    {
+      "id": "2e0bd72e0dcc",
+      "fonte_id": "letras-libres",
+      "fonte": "Letras Libres",
+      "continente": "america-do-norte",
+      "pais": "México",
+      "lingua": "es",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Daniel Monroy Cuevas: el tiempo y el territorio",
+      "url": "https://letraslibres.com/arte/daniel-monroy-cuevas-el-tiempo-y-el-territorio/25/08/2026/",
+      "resumo": "Una visita al estudio del artista mexicano revela los métodos y obsesiones detrás de un trabajo que explora las posibilidades de la imagen en movimiento, los territorios limítrofes y el cuerpo. The post Daniel Monroy Cuevas: el tiempo y el territorio appeared first on Letras…",
+      "data": "2026-08-25",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "01707e6c818b",
+      "fonte_id": "letras-libres",
+      "fonte": "Letras Libres",
+      "continente": "america-do-norte",
+      "pais": "México",
+      "lingua": "es",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Descolonización a la carta",
+      "url": "https://letraslibres.com/politica/descolonizacion-a-la-carta/25/08/2026/",
+      "resumo": "\"Descolonizar\" fue la consigna de un foro organizado en Estambul: una descolonización, sin embargo, que no mide con la misma vara a los imperios de otros y a los propios. The post Descolonización a la carta appeared first on Letras Libres .",
+      "data": "2026-08-25",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "c7089623e33c",
+      "fonte_id": "guardian-books",
+      "fonte": "The Guardian Books",
+      "continente": "europa",
+      "pais": "Reino Unido",
+      "lingua": "en",
+      "canal": "caderno",
+      "no_plano": false,
+      "titulo": "Feminism for a World on Fire by Natasha Walter review – hope amid the hopelessness",
+      "url": "https://www.theguardian.com/books/2026/aug/25/feminism-for-a-world-on-fire-by-natasha-walter-review-hope-amid-the-hopelessness",
+      "resumo": "A writer and activist links the climate crisis to battles for justice around the world in this vital book It has become increasingly difficult to change our minds, to question our own views or to find common ground with people we disagree with, all of which makes Natasha…",
+      "data": "2026-08-25",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "ab2b245bc0aa",
+      "fonte_id": "letras-libres",
+      "fonte": "Letras Libres",
+      "continente": "america-do-norte",
+      "pais": "México",
+      "lingua": "es",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "La enfermedad de un autócrata",
+      "url": "https://letraslibres.com/red-hispana/la-enfermedad-de-un-autocrata/25/08/2026/",
+      "resumo": "¿El declive biológico de Trump es un riesgo inmediato? La opacidad de su gobierno alimenta la hipótesis. The post La enfermedad de un autócrata appeared first on Letras Libres .",
+      "data": "2026-08-25",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "00bd1d60b986",
+      "fonte_id": "quatro-cinco-um",
+      "fonte": "Quatro Cinco Um",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Lena Dunham e as dores da fama",
+      "url": "https://quatrocincoum.com.br/noticias/listao/listao-da-semana/lena-dunham-e-as-dores-da-fama/",
+      "resumo": "Criadora da série Girls e conhecida por sua tendência ao sincericídio, Lena Dunham conta tudo e mais um pouco de sua ascensão na indústria de entretenimento, o lado B do sucesso e suas dores crônicas (e físicas) em Doente de fama, que chega esta semana às livrarias. Também na…",
+      "data": "2026-08-25",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "adde5ede8488",
+      "fonte_id": "nyrb",
+      "fonte": "The New York Review of Books",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Life in the Fortress",
+      "url": "https://www.nybooks.com/online/2026/08/25/life-in-the-fortress-qian-zhongshu/",
+      "resumo": "I first read Fortress Besieged as a teenager, when the novel, originally published in 1947 and out of print for decades, became a bestseller in China after it was adapted into a TV series in 1990. The book was so popular that its characters quickly became, in the public…",
+      "data": "2026-08-25",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "e3f4a4807e59",
+      "fonte_id": "meanjin",
+      "fonte": "Meanjin",
+      "continente": "oceania",
+      "pais": "Austrália",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Reading Trails Week 5",
+      "url": "https://meanjin.com.au/latest/reading-trails-week-5/",
+      "resumo": "Head to the Pilliga Scrub this week with two extraordinary observers of Australia, its landscapes, histories and potential futures. Originally published in 2016, “Changescapes” travels with Ross Gibson as Gibson travels with Eric Rolls in the quest to “graft” Rolls’ mighty…",
+      "data": "2026-08-25",
+      "gestos": [
+        "interpretar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "8aa25a594af5",
+      "fonte_id": "guardian-books",
+      "fonte": "The Guardian Books",
+      "continente": "europa",
+      "pais": "Reino Unido",
+      "lingua": "en",
+      "canal": "caderno",
+      "no_plano": false,
+      "titulo": "The Great Dictator by Matthew Sweet review – the fabulous life of Barbara Cartland",
+      "url": "https://www.theguardian.com/books/2026/aug/25/the-great-dictator-by-matthew-sweet-review-the-life-of-barbara-cartland",
+      "resumo": "A brilliant new biography that does its subject the favour of taking her seriously – even if few else did Barbara Cartland was famous for dictating her novels. With a pekingese clamped to her hot pink bosom she would lie back on a library couch and exhale a story about virginal…",
+      "data": "2026-08-25",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "fd92b85d0334",
+      "fonte_id": "nyrb",
+      "fonte": "The New York Review of Books",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "The Return of the Teen Crime Panic",
+      "url": "https://www.nybooks.com/online/2026/08/25/the-return-of-the-teen-crime-panic-raise-the-age/",
+      "resumo": "In the early hours of Sunday, August 3, 2025, Edward Coristine, a nineteen-year-old computer programmer who had achieved notoriety as an employee of Elon Musk’s Department of Government Efficiency, was walking a friend back to her car near U Street in Washington, D.C., when…",
+      "data": "2026-08-25",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "cbfeca677340",
+      "fonte_id": "asymptote",
+      "fonte": "Asymptote",
+      "continente": "asia",
+      "pais": "internacional",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Translation Tuesday: “A Man Kicked to Death” by Pablo Palacio",
+      "url": "https://www.asymptotejournal.com/blog/2026/08/25/translation-tuesday-a-man-kicked-to-death-by-pablo-palacio/",
+      "resumo": "Shock, pity, horror—these are probably the most natural responses a person might have when learning about a brutal murder from the local news. Less common is delirious amusement, but that’s precisely what overcomes the narrator of this Translation Tuesday‘s story, written by…",
+      "data": "2026-08-25",
+      "gestos": [
+        "deslocar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "0732c6b5c576",
+      "fonte_id": "the-spinoff",
+      "fonte": "The Spinoff",
+      "continente": "oceania",
+      "pais": "Aotearoa",
+      "lingua": "en",
+      "canal": "caderno",
+      "no_plano": false,
+      "titulo": "‘It’s everything I look for in a story’: Stephen Lovatt’s favourite book",
+      "url": "https://thespinoff.co.nz/books/25-08-2026/its-everything-i-look-for-in-story-stephen-lovatts-favourite-book",
+      "resumo": "Welcome to The Spinoff Books Confessional , in which we get to know the reading habits of Aotearoa writers, and guests. This week: actor, Stephen Lovatt. The book I wish I’d written Orbital by Samantha Harvey. Succinct. Elegiac. Exquisite. Redemptive. Love filled. Kind.…",
+      "data": "2026-08-25",
+      "gestos": [
+        "interpretar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "4409bc8f8102",
+      "fonte_id": "cult",
+      "fonte": "CULT",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "“As pessoas me chamavam de louco, mas faz parte”, diz novo dono do Palacetes da Sé, projetado por Ramos de Azevedo",
+      "url": "https://revistacult.uol.com.br/home/novo-dono-do-palacetes-da-se-projetado-por-ramos-de-azevedo/",
+      "resumo": "Após 85 anos de portas fechadas, o edifício do número 97 da Rua Roberto Simonsen, a poucos metros do marco zero de São Paulo, ganha um novo dono O post “As pessoas me chamavam de louco, mas faz parte”, diz novo dono do Palacetes da Sé, projetado por Ramos de Azevedo apareceu…",
+      "data": "2026-08-25",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "bdf959bc3be6",
+      "fonte_id": "brittle-paper",
+      "fonte": "Brittle Paper",
+      "continente": "africa",
+      "pais": "Nigéria",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Abebi AfroNonfiction Foundation Launches Inaugural Continental Fellowship for African Women Writers | Closes September 12",
+      "url": "https://brittlepaper.com/2026/08/abebi-afrononfiction-foundation-launches-inaugural-continental-fellowship-for-african-women-writers-closes-september-12/",
+      "resumo": "The Abebi AfroNonfiction Foundation has announced the inaugural Abebi AfroNonfiction Fellowship, a new pan-African writing initiative for women working in creative nonfiction. The fellowship brings together ten writers from across the continent for six weeks of virtual…",
+      "data": "2026-08-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "fe873875e965",
+      "fonte_id": "letras-libres",
+      "fonte": "Letras Libres",
+      "continente": "america-do-norte",
+      "pais": "México",
+      "lingua": "es",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Accionistas de nuestra obsolescencia",
+      "url": "https://letraslibres.com/ciencia-y-tecnologia/accionistas-de-nuestra-obsolescencia/26/08/2026/",
+      "resumo": "Sam Altman propone repartir una parte de la riqueza creada por la inteligencia artificial. El verdadero conflicto no girará solo en torno a los dividendos, sino al control de sistemas capaces de gobernar la economía, la política y nuestra misma percepción de la realidad. The…",
+      "data": "2026-08-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "7b26c4b1909f",
+      "fonte_id": "quatro-cinco-um",
+      "fonte": "Quatro Cinco Um",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Apenas uma história de amor",
+      "url": "https://quatrocincoum.com.br/entrevistas/literatura/apenas-uma-historia-de-amor/",
+      "resumo": "Nas primeiras páginas de O que sei de você, romance do canadense de origem egípcia Éric Chacour, o protagonista expressa uma inquietação que atravessa toda a narrativa: A vida começaria mais tarde. Por ora, não era a vida. Era uma espera, uma pausa talvez, a infância, uma lenta…",
+      "data": "2026-08-26",
+      "gestos": [
+        "historicizar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "85feb40d2a6e",
+      "fonte_id": "quatro-cinco-um",
+      "fonte": "Quatro Cinco Um",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Encarar o desconhecido",
+      "url": "https://quatrocincoum.com.br/resenhas/memoria/encarar-o-desconhecido/",
+      "resumo": "Crítica cultural e analista política das mais importantes no cenário latino-americano das últimas décadas, a argentina Beatriz Sarlo (1942-2024) defende para si, em suas memórias lançadas postumamente, uma não convencionalidade que é comprovada por seus textos, ensaios e…",
+      "data": "2026-08-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "c1388c6bb956",
+      "fonte_id": "el-pais-cultura",
+      "fonte": "El País Cultura",
+      "continente": "europa",
+      "pais": "Espanha",
+      "lingua": "es",
+      "canal": "caderno",
+      "no_plano": false,
+      "titulo": "Escándalo en las letras inglesas: Rachel Cusk destruye sin nombrarla a la actriz Natalie Portman en su última novela",
+      "url": "https://elpais.com/cultura/2026-08-26/escandalo-en-las-letras-inglesas-rachel-cusk-destruye-sin-nombrarla-a-la-actriz-natalie-portman-en-su-ultima-novela.html",
+      "resumo": "Ninguna de ellas ha confirmado que la intérprete sea la protagonista de `Life of M’ (La Vida de M)",
+      "data": "2026-08-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "c7910ffa3754",
+      "fonte_id": "brittle-paper",
+      "fonte": "Brittle Paper",
+      "continente": "africa",
+      "pais": "Nigéria",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Ethiopian-Born Computer Scientist Timnit Gebru’s Debut Book, Deep Unlearning, Is Now Available for Preorder",
+      "url": "https://brittlepaper.com/2026/08/ethiopian-born-computer-scientist-timnit-gebrus-debut-book-deep-unlearning-is-now-available-for-preorder/",
+      "resumo": "Timnit Gebru, the Ethiopian-born computer scientist and one of the most consequential voices in the fight for ethical AI, has announced that her debut book, Deep Unlearning: The Rise of AI and the Radicalization of a Tech Idealist, is now open for preorder. Sharing the news on…",
+      "data": "2026-08-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "b1fb05c62e53",
+      "fonte_id": "quatro-cinco-um",
+      "fonte": "Quatro Cinco Um",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Intervenção americana",
+      "url": "https://quatrocincoum.com.br/resenhas/laut/intervencao-americana/",
+      "resumo": "No ano de 1964, no Rio de Janeiro, eu cursava a Faculdade de Direito da PUC-Rio. A memória do início do golpe militar na madrugada de 31 de março permanece viva: a confirmação da adesão do general Amaury Kruel em São Paulo, seguida pela notícia do incêndio da sede da União…",
+      "data": "2026-08-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "5da57d8ae7c8",
+      "fonte_id": "asymptote",
+      "fonte": "Asymptote",
+      "continente": "asia",
+      "pais": "internacional",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Just Listen: An Interview with George Szirtes",
+      "url": "https://www.asymptotejournal.com/blog/2026/08/26/just-listen-an-interview-with-george-szirtes/",
+      "resumo": "Among the many literary prizes around the world, the announcements of the Nobel and the Booker might be the biggest events of the global scene. In this, 2025 was a significant year for Hungarian literature; the Nobel Prize was awarded to László Krasznahorkai, and Booker Prize…",
+      "data": "2026-08-26",
+      "gestos": [
+        "disputar-valor"
+      ],
+      "score": 23
+    },
+    {
+      "id": "b89e709a9134",
+      "fonte_id": "letras-libres",
+      "fonte": "Letras Libres",
+      "continente": "america-do-norte",
+      "pais": "México",
+      "lingua": "es",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Los gestos que agitan la normalidad",
+      "url": "https://letraslibres.com/arte/los-gestos-que-agitan-la-normalidad/26/08/2026/",
+      "resumo": "El Museo Universitario del Chopo expone \"Los peores tiempos posibles\", muestra en la que Regina José Galindo utiliza las herramientas del performance para cuestionar los tiempos que corren. The post Los gestos que agitan la normalidad appeared first on Letras Libres .",
+      "data": "2026-08-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "882dfb1c4521",
+      "fonte_id": "cult",
+      "fonte": "CULT",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Miscigenação e o estupro: quando o “não” era impossível",
+      "url": "https://revistacult.uol.com.br/home/miscigenacao-e-o-estupro-quando-o-nao-era-impossivel/",
+      "resumo": "O debate sobre a formação da sociedade brasileira e a origem de sua miscigenação não pode ser leniente com o passado O post Miscigenação e o estupro: quando o “não” era impossível apareceu primeiro em Revista Cult .",
+      "data": "2026-08-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "02cb0947ddbd",
+      "fonte_id": "overland",
+      "fonte": "Overland",
+      "continente": "oceania",
+      "pais": "Austrália",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "The Billionaire Frontier: sovereignty, military myths, and the collapse of the Australia-Israel parallel",
+      "url": "https://overland.org.au/2026/08/the-billionaire-frontier-sovereignty-military-myths-and-the-collapse-of-the-australia-israel-parallel/",
+      "resumo": "Two months ago, mining billionaire Gina Rinehart stood before the News Corp National Bush Summit in Townsville and proposed a radical reshaping of northern Queensland's landscape. Her plan was to establish an Israeli-backed arms manufacturing hub near Prairie, west of…",
+      "data": "2026-08-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "622899c70c3f",
+      "fonte_id": "nyrb",
+      "fonte": "The New York Review of Books",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "The Other Donald",
+      "url": "https://www.nybooks.com/online/2026/08/26/the-other-donald-leanne-shapton/",
+      "resumo": "A dispatch from the Art Editor",
+      "data": "2026-08-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "89bb586f4b03",
+      "fonte_id": "brittle-paper",
+      "fonte": "Brittle Paper",
+      "continente": "africa",
+      "pais": "Nigéria",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Witsprouts Opens Nominations for Second Storytelling Prize worth ₦500,000 | Deadline September 30",
+      "url": "https://brittlepaper.com/2026/08/witsprouts-opens-nominations-for-second-storytelling-prize-worth-%e2%82%a6500000-deadline-september-30/",
+      "resumo": "The Witsprouts Project, a cultural organisation dedicated to expanding participation in African arts and culture, has opened nominations for the second edition of the Witsprouts Storytelling Prize. Established to revive the art of oral storytelling while rewarding exceptional…",
+      "data": "2026-08-26",
+      "gestos": [
+        "disputar-valor"
+      ],
+      "score": 23
+    },
+    {
+      "id": "7cfd5074b9a3",
+      "fonte_id": "quatro-cinco-um",
+      "fonte": "Quatro Cinco Um",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Cuidar do fogo",
+      "url": "https://quatrocincoum.com.br/resenhas/livro-e-leitura/cuidar-do-fogo/",
+      "resumo": "O manifesto nasceu como arma. Ao abrir o texto de 1848 anunciando o espectro que rondava a Europa, Marx e Engels consolidam um gênero de combate: escreve-se um manifesto quando se acredita que o mundo precisa mudar agora e que os inimigos da mudança têm nome. O século seguinte…",
+      "data": "2026-08-27",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "12f457cd5653",
+      "fonte_id": "letras-libres",
+      "fonte": "Letras Libres",
+      "continente": "america-do-norte",
+      "pais": "México",
+      "lingua": "es",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "El rito de Europa",
+      "url": "https://letraslibres.com/politica/el-rito-de-europa/27/08/2026/",
+      "resumo": "A propósito de los incidentes fronterizos entre España y Marruecos en Ceuta con el cruce a nado de al menos 72.000 personas. The post El rito de Europa appeared first on Letras Libres .",
+      "data": "2026-08-27",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "b1096d3998ce",
+      "fonte_id": "brittle-paper",
+      "fonte": "Brittle Paper",
+      "continente": "africa",
+      "pais": "Nigéria",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Eze, Ifowodo, and Oburumu Make Final Three for the $100,000 Nigeria Prize for Literature 2026",
+      "url": "https://brittlepaper.com/2026/08/eze-ifowodo-and-oburumu-make-final-three-for-the-100000-nigeria-prize-for-literature-2026/",
+      "resumo": "The Nigeria Prize for Literature has narrowed its 2026 poetry field down to a shortlist of three: James Ngwu Eze’s Unbind Me Now, Ogaga Ifowodo’s Why Does God Need a Gun?, and Tares Oburumu’s Flora’s Love Colony. The three collections were selected from an initial pool of 223…",
+      "data": "2026-08-27",
+      "gestos": [
+        "disputar-valor"
+      ],
+      "score": 23
+    },
+    {
+      "id": "509a54726c4e",
+      "fonte_id": "lithub",
+      "fonte": "Literary Hub",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Help, My Writing Group Think My Latest Story Was Really Funny: It Wasn’t Meant to Be",
+      "url": "https://lithub.com/help-my-writing-group-think-my-latest-story-was-really-funny-it-wasnt-meant-to-be/",
+      "resumo": "Hello again, gentle readers! Welcome back to another delightful installment of everyone’s favorite bimonthly drunken advice column, Am I the Literary Asshole? It’s a column designed to bring hope, faith, and a love of happy hour libations to all God’s",
+      "data": "2026-08-27",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "1da4cfd8e76a",
+      "fonte_id": "lithub",
+      "fonte": "Literary Hub",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Lit Hub Daily: August 27, 2026",
+      "url": "https://lithub.com/lit-hub-daily-august-27-2026/",
+      "resumo": "What do you do when your writing group thinks your story’s hilarious (when it’s not supposed to be)? | Lit Hub Advice If you have a free afternoon, try reading one of these novellas from cover to cover. | Lit",
+      "data": "2026-08-27",
+      "gestos": [
+        "interpretar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "c70db1ec4456",
+      "fonte_id": "brittle-paper",
+      "fonte": "Brittle Paper",
+      "continente": "africa",
+      "pais": "Nigéria",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Nigerian American Chef Kwame Onwuachi Serves Up His Third Book, All Hours: Crazy Good Food for Whatever, Whenever, Coming This September",
+      "url": "https://brittlepaper.com/2026/08/nigerian-american-chef-kwame-onwuachi-serves-up-his-third-book-all-hours-crazy-good-food-for-whatever-whenever-coming-this-september/",
+      "resumo": "Chef Kwame Onwuachi, the Nigerian American culinary force and James Beard Award-winning chef behind Tatiana, which has landed on the New York Times‘ list of top 100 restaurants every year since opening in 2022, is set to release his third book, All Hours: Crazy Good Food for…",
+      "data": "2026-08-27",
+      "gestos": [
+        "disputar-valor"
+      ],
+      "score": 23
+    },
+    {
+      "id": "37d2fc36a193",
+      "fonte_id": "overland",
+      "fonte": "Overland",
+      "continente": "oceania",
+      "pais": "Austrália",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Our support for the open letter: To Iran’s political prisoners, trapped ‘between two blades of a scissors’",
+      "url": "https://overland.org.au/2026/08/our-support-for-the-open-letter-to-irans-political-prisoners-trapped-between-two-blades-of-a-scissors/",
+      "resumo": "As migrants and refugees in diaspora and in exile from Iran, who have our loved ones suffering in the Iranian state’s prisons and facing its gallows, we salute the signatories of the open letter To Iran’s political prisoners, trapped ‘between two blades of a scissors’,…",
+      "data": "2026-08-27",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "9272d6c2fc9b",
+      "fonte_id": "lithub",
+      "fonte": "Literary Hub",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Short But Sweet: Nine Novellas To Read In a Single Afternoon",
+      "url": "https://lithub.com/short-but-sweet-nine-novellas-to-read-in-a-single-afternoon/",
+      "resumo": "In anticipation of the publication of my novella, American Moon, I’ve been thinking a lot about the form. Novellas are tiny in the world of books, but they’re good for readers in a self-inflicted time-squeezed age. We all know that",
+      "data": "2026-08-27",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "677ddbeaddb0",
+      "fonte_id": "lithub",
+      "fonte": "Literary Hub",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Six Novels That Try to Keep Up With Elizabeth Taylor",
+      "url": "https://lithub.com/six-novels-that-try-to-keep-up-with-elizabeth-taylor/",
+      "resumo": "I first saw Elizabeth Taylor in The VIPs, when I was a moony and impressionable teenager. There were nuances I surely missed, but the movie’s larger premise came through loud and clear: life could be fabulous, dramatic, and shaped—perhaps even",
+      "data": "2026-08-27",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "4371f90338f1",
+      "fonte_id": "lithub",
+      "fonte": "Literary Hub",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "The Letter Doula: How to Help a Life Arrive on the Page",
+      "url": "https://lithub.com/the-letter-doula-how-to-help-a-life-arrive-on-the-page/",
+      "resumo": "For years, I believed people avoided letter writing because they lacked time. But after teaching leadership, communication, and storytelling to thousands of students, I’ve come to believe something else entirely: People do not avoid writing because they’re busy, or even",
+      "data": "2026-08-27",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "74cb4952f93e",
+      "fonte_id": "brittle-paper",
+      "fonte": "Brittle Paper",
+      "continente": "africa",
+      "pais": "Nigéria",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "The Ugly Review Opens Submissions for Issue II, Themed “Metamorphosis” | Submit by September 15, 2026",
+      "url": "https://brittlepaper.com/2026/08/the-ugly-review-opens-submissions-for-issue-ii-themed-metamorphosis-submit-by-september-15-2026/",
+      "resumo": "The Ugly Collective has opened its call for submissions for the second issue of The Ugly Review, themed “Metamorphosis.” The editors are seeking fiction, nonfiction, poetry, and photography/art that explores transformation in all its diverse, weird, beautiful, violent, and…",
+      "data": "2026-08-27",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "56c25e1f8580",
+      "fonte_id": "lithub",
+      "fonte": "Literary Hub",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "What It Means to Love Elliott Smith",
+      "url": "https://lithub.com/what-it-means-to-love-elliott-smith/",
+      "resumo": "One of the last videos taken of Elliott Smith shows him at the Fonda Theatre, in Los Angeles. He’s sitting in a metal stacking chair, wearing faded dark pants and a T‑shirt that says i < 3 metal, a little slumped",
+      "data": "2026-08-27",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "08752094376e",
+      "fonte_id": "quatro-cinco-um",
+      "fonte": "Quatro Cinco Um",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Xico Sá",
+      "url": "https://quatrocincoum.com.br/entrevistas/fichamento/xico-sa/",
+      "resumo": "Os fatos narrados em O tesoureiro: o esquema de corrupção, a fuga espetacular e a morte de PC Farias (Todavia) formam o romance noir da política brasileira. Você tinha uma obsessão pelo tesoureiro do Fernando Collor ou pelo “furo” jornalístico?O PC Farias era muito interessante…",
+      "data": "2026-08-27",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 23
+    },
+    {
+      "id": "8febecf9b511",
+      "fonte_id": "cult",
+      "fonte": "CULT",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Escapar",
+      "url": "https://revistacult.uol.com.br/home/escapar/",
+      "resumo": "Diálogos que busquem mudar as estruturas socioeconômicas e políticas são \"formas de escapar\", mas não só isso; penso que são maneiras de transformar canoas furadas em jangadas e, depois, em preparação O post Escapar apareceu primeiro em Revista Cult .",
+      "data": "2026-08-17",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "069fcd51aabb",
+      "fonte_id": "public-books",
+      "fonte": "Public Books",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Can Centuries-Old Nuns Really Save Us from Ourselves?",
+      "url": "https://www.publicbooks.org/can-centuries-old-nuns-really-save-us-from-ourselves/",
+      "resumo": "“Can looking to women beholden to God help us escape a society so fixated on itself? Or does it simply package those devout lives as the latest content for a culture industry desperate for the next trending topic?” The post Can Centuries-Old Nuns Really Save Us from Ourselves?…",
+      "data": "2026-08-18",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "f0de789597a7",
+      "fonte_id": "meanjin",
+      "fonte": "Meanjin",
+      "continente": "oceania",
+      "pais": "Austrália",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Elizabeth Jolley: An Appreciation",
+      "url": "https://meanjin.com.au/essays/elizabeth-jolley-an-appreciation/",
+      "resumo": "I first came across Elizabeth Jolley’s writing in Meanjin in 1979. A story called The Bench (now retitled Adam’s Bride in her Penguin collection Woman in a Lampshade) opens with these sentences: All small towns in the country have some sort of blessing. In one there is a…",
+      "data": "2026-08-18",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "88ec18fb48d1",
+      "fonte_id": "cult",
+      "fonte": "CULT",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Mudando a fotografia do poder: Marielle e o novo imaginário político sobre as mulheres negras",
+      "url": "https://revistacult.uol.com.br/home/mudando-a-fotografia-do-poder-marielle-e-o-novo-imaginario-politico-sobre-as-mulheres-negras/",
+      "resumo": "Depois das campanhas de 2018 e 2020, a ciência política cunhou o conceito “efeito Marielle” para explicar o impacto da vereadora no imaginário político-social. Marielle passou a ser sinônimo da atuação progressista das mulheres negras e da premência pela produção de meios de…",
+      "data": "2026-08-18",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "7f1adc3d4015",
+      "fonte_id": "meanjin",
+      "fonte": "Meanjin",
+      "continente": "oceania",
+      "pais": "Austrália",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "My Head is a Camera",
+      "url": "https://meanjin.com.au/latest/my-head-is-a-camera/",
+      "resumo": "Mounted into sockets in my skull are two prime lenses. They are 35mm, a focal length that mimics the field of view of the human eye, according to photographers. What my prime lenses see is recorded on a memory card (my brain) for easy recall later. Then, rather than roll these…",
+      "data": "2026-08-18",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "aecb774b4e23",
+      "fonte_id": "meanjin",
+      "fonte": "Meanjin",
+      "continente": "oceania",
+      "pais": "Austrália",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Reading Trails Week 4",
+      "url": "https://meanjin.com.au/latest/reading-trails-week-4/",
+      "resumo": "This week’s Reading Trail in support of ABC-RN’s imminent Top 100 Australian Books poll revisits Helen Garner’s appreciation of the work of Elizabeth Jolley . In this overview, published in the winter of 1983, Garner celebrates Jolley’s humour, her pathos, and the images she…",
+      "data": "2026-08-18",
+      "gestos": [
+        "interpretar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "68fbd24aa3d4",
+      "fonte_id": "meanjin",
+      "fonte": "Meanjin",
+      "continente": "oceania",
+      "pais": "Austrália",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Who Talks of Victory?",
+      "url": "https://meanjin.com.au/memoir/who-talks-of-victory/",
+      "resumo": "When I was little I was always very interested in big women who shamelessly mentioned their knickers in front of my father. These women sometimes sang fragments of music, often quite difficult passages in which there might be two violins, a cello, a trumpet and a drum roll, for…",
+      "data": "2026-08-18",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "55cf1d51c970",
+      "fonte_id": "asymptote",
+      "fonte": "Asymptote",
+      "continente": "asia",
+      "pais": "internacional",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Announcing a Literary Showcase on Czechia in the Fall 2026 Edition",
+      "url": "https://www.asymptotejournal.com/blog/2026/08/19/announcing-a-literary-showcase-on-czechia-in-the-fall-2026-edition/",
+      "resumo": "For the Fall 2026 edition, we are partnering with the Czech Literary Centre to host a showcase of contemporary Czech writing—specifically literary fiction, literary nonfiction, and poetry. We’re especially keen on introducing new voices to the Anglophone world. Authors and…",
+      "data": "2026-08-19",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "5213d590989d",
+      "fonte_id": "cult",
+      "fonte": "CULT",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Como foi escrever um livro sobre a machosfera",
+      "url": "https://revistacult.uol.com.br/home/como-foi-escrever-um-livro-sobre-a-machosfera/",
+      "resumo": "O ódio contra as mulheres é antigo, velho, mas extremamente astuto quando se apropria de novas ferramentas. A misoginia muda de linguagem, encontra novas plataformas, incorpora novos vocabulários e descobre novas maneiras de circular, como aconteceu com o advento da internet O…",
+      "data": "2026-08-19",
+      "gestos": [
+        "contraler"
+      ],
+      "score": 18
+    },
+    {
+      "id": "5d2ead5f2d1a",
+      "fonte_id": "nplusone",
+      "fonte": "n+1",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Ground Zero Plus 25",
+      "url": "https://www.nplusonemag.com/online-only/events/ground-zero-plus-25/",
+      "resumo": "A discussion at the Great Hall",
+      "data": "2026-08-19",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "7784bb33d870",
+      "fonte_id": "public-books",
+      "fonte": "Public Books",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Literature in the Time of Suicide",
+      "url": "https://www.publicbooks.org/literature-in-the-time-of-suicide/",
+      "resumo": "“In both these Spanish-language novels, thinking about suicide is not only to grapple with someone else’s decision to die, but also inevitably with one’s own decision to go on living.” The post Literature in the Time of Suicide appeared first on Public Books .",
+      "data": "2026-08-19",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "feccba8ee1b0",
+      "fonte_id": "otra-parte",
+      "fonte": "Otra Parte",
+      "continente": "america-do-sul",
+      "pais": "Argentina",
+      "lingua": "es",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "El alfabeto natural",
+      "url": "https://www.revistaotraparte.com/ensayo-teoria/el-alfabeto-natural/?utm_source=rss&utm_medium=rss&utm_campaign=el-alfabeto-natural",
+      "resumo": "En su ensayo titulado La transitoriedad (1915), Freud cuenta que, caminando por un bosque con Rainer Maria Rilke, pudo ver cómo al poeta la contemplación de unas flores que adornaban el costado del camino le producía un profundo recogimiento, un sentimiento de dolor cuando nada…",
+      "data": "2026-08-20",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "9db9caa0d003",
+      "fonte_id": "asymptote",
+      "fonte": "Asymptote",
+      "continente": "asia",
+      "pais": "internacional",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Exactly as It Was: An Interview with Takami Nieda on Translating Yusuke Norishiro",
+      "url": "https://www.asymptotejournal.com/blog/2026/08/20/exactly-as-it-was-an-interview-with-takami-nieda-on-translating-yusuke-norishiro/",
+      "resumo": "In Traveling Practice, the lauded Japanese writer Yusuke Norishiro takes readers on an immersive, quietly profound trip along the banks of the Tone River, telling the story of an author and his young, athletic niece as they work to develop their respective crafts. The result is…",
+      "data": "2026-08-20",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "befcc77093ca",
+      "fonte_id": "otra-parte",
+      "fonte": "Otra Parte",
+      "continente": "america-do-sul",
+      "pais": "Argentina",
+      "lingua": "es",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Futuro desierto",
+      "url": "https://www.revistaotraparte.com/cine-y-tv/futuro-desierto/?utm_source=rss&utm_medium=rss&utm_campaign=futuro-desierto",
+      "resumo": "“Estamos viviendo el inicio de una revolución tecnológica. Las corporaciones globales libran una guerra feroz para explotar el poder de la Inteligencia Artificial a través de productos inimaginables. Una nueva realidad ha nacido”. Estas son las líneas con que abre Futuro…",
+      "data": "2026-08-20",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "4ad26b205062",
+      "fonte_id": "otra-parte",
+      "fonte": "Otra Parte",
+      "continente": "america-do-sul",
+      "pais": "Argentina",
+      "lingua": "es",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "La juventud de la crítica",
+      "url": "https://www.revistaotraparte.com/ensayo-teoria/la-juventud-de-la-critica/?utm_source=rss&utm_medium=rss&utm_campaign=la-juventud-de-la-critica",
+      "resumo": "Algo pasó en la crítica literaria argentina entre mediados de los cincuenta y mediados de los ochenta del siglo pasado. Se ha hablado de la emergencia de la revista Contorno y del correlativo eclipse de Sur , en el tramo final del peronismo clásico, para marcar el inicio de…",
+      "data": "2026-08-20",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "ea660e820d6c",
+      "fonte_id": "otra-parte",
+      "fonte": "Otra Parte",
+      "continente": "america-do-sul",
+      "pais": "Argentina",
+      "lingua": "es",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Medio real",
+      "url": "https://www.revistaotraparte.com/literatura-argentina/medio-real/?utm_source=rss&utm_medium=rss&utm_campaign=medio-real",
+      "resumo": "El libro se abre con una sección titulada “Agradecimientos”: “Voy a escribir mi propio libro sobre la llamada ‘Conquista’, voy a sumar el mío a los muchos que salen cada año sobre el tema, alentados por el Imperio, que pide nuestros relatos para exhibir capacidad de…",
+      "data": "2026-08-20",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "e9f98dd32c86",
+      "fonte_id": "cult",
+      "fonte": "CULT",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Sem margens: A forma do encontro em Estiva",
+      "url": "https://revistacult.uol.com.br/home/sem-margens-a-forma-do-encontro-em-estiva/",
+      "resumo": "A voz de Bastião se interrompe. Seu modo de olhar permanece. Ao descobrir outra forma de atenção, o romance “Estiva” encontra outra forma de pensar. O post Sem margens: A forma do encontro em Estiva apareceu primeiro em Revista Cult .",
+      "data": "2026-08-20",
+      "gestos": [
+        "contraler"
+      ],
+      "score": 18
+    },
+    {
+      "id": "1960269020aa",
+      "fonte_id": "meanjin",
+      "fonte": "Meanjin",
+      "continente": "oceania",
+      "pais": "Austrália",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "The flight of birds",
+      "url": "https://meanjin.com.au/fiction/the-flight-of-birds/",
+      "resumo": "My letter said what I knew it would say.",
+      "data": "2026-08-20",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "b191d5ae2dd5",
+      "fonte_id": "otra-parte",
+      "fonte": "Otra Parte",
+      "continente": "america-do-sul",
+      "pais": "Argentina",
+      "lingua": "es",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Una exposición",
+      "url": "https://www.revistaotraparte.com/literatura-iberoamericana/una-exposicion/?utm_source=rss&utm_medium=rss&utm_campaign=una-exposicion",
+      "resumo": "En el ensayo “Del culto de los libros”, Borges rescata de las Confesiones de San Agustín el momento en que el filósofo observa por primera vez a su maestro Ambrosio practicando la lectura silenciosa, espectáculo para aquel entonces novedoso en relación con la literatura. La…",
+      "data": "2026-08-20",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "6c9734c60f94",
+      "fonte_id": "otra-parte",
+      "fonte": "Otra Parte",
+      "continente": "america-do-sul",
+      "pais": "Argentina",
+      "lingua": "es",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Una sombra voraz / La obra",
+      "url": "https://www.revistaotraparte.com/teatro/una-sombra-voraz-la-obra/?utm_source=rss&utm_medium=rss&utm_campaign=una-sombra-voraz-la-obra",
+      "resumo": "La lectura de un libro puede impulsar a alguien a escalar una de las montañas más altas del mundo, transformar una vida en una película o narrar lo que ha sido escrito para la escena. Quizás por eso los textos dramáticos más recientes de Mariano Pensotti, reunidos en un volumen…",
+      "data": "2026-08-20",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "eb4a011b184d",
+      "fonte_id": "public-books",
+      "fonte": "Public Books",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "“Our Guns Make the Violence That People Are Fleeing”: Ieva Jusionyte on Guns & Violence in Mexico",
+      "url": "https://www.publicbooks.org/our-guns-make-the-violence-that-people-are-fleeing-ieva-jusionyte-on-guns-violence-in-mexico/",
+      "resumo": "“I was already there, and I was already an ethnographer. I was interested in borders as sites of state violence. I became very curious and I thought I would like to follow the guns south.” The post “Our Guns Make the Violence That People Are Fleeing”: Ieva Jusionyte on Guns &…",
+      "data": "2026-08-20",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "148987fb0c9e",
+      "fonte_id": "451-mhz",
+      "fonte": "451 MHz",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "podcast",
+      "no_plano": false,
+      "titulo": "#209 Escrita na estrada — Calila das Mercês",
+      "url": "91817d2e-66dc-446e-8690-3f703d5158a6",
+      "resumo": "Até onde nossos caminhos nos levam? Este episódio recebe a escritora Calila das Mercês, que apresenta Nódoa (Companhia das Letras), sua estreia no romance, na coluna Lado Beber do 451 MHz. Escrito durante viagens e vivências da autora, o livro é ambientado nos anos 60 e tem uma…",
+      "data": "2026-08-21",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "aa5f00f77c5a",
+      "fonte_id": "public-books",
+      "fonte": "Public Books",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Birds Beyond Birding",
+      "url": "https://www.publicbooks.org/birds-beyond-birding/",
+      "resumo": "“Looking at birds helps us notice connections, imagine better worlds, and build new solidarities across differences, including across species.” The post Birds Beyond Birding appeared first on Public Books .",
+      "data": "2026-08-21",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "4a4473ffbc2b",
+      "fonte_id": "asymptote",
+      "fonte": "Asymptote",
+      "continente": "asia",
+      "pais": "internacional",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Weekly Dispatches From the Frontlines of World Literature",
+      "url": "https://www.asymptotejournal.com/blog/2026/08/21/weekly-dispatches-from-the-frontlines-of-world-literature-262/",
+      "resumo": "This week’s dispatches report on political resistance in the Philippines and an eventful festival in Central Europe. Read on to learn more! Alton Melvar M Dapanas, Editor-at-Large, reporting from the Philippines On Nelson Mandela International Day, July 18, 2026, human rights…",
+      "data": "2026-08-21",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "5a618413aa09",
+      "fonte_id": "nyrb",
+      "fonte": "The New York Review of Books",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Braving the Labyrinth",
+      "url": "https://www.nybooks.com/online/2026/08/22/braving-the-labyrinth-geoffrey-obrien/",
+      "resumo": "Geoffrey O’Brien is one of those writers who can write about anything: opera, British postwar film, crime fiction, the Third Reich, Grant Wood, Patti Smith, Duke Ellington, Seinfeld. Yet these subjects are often united by a kind of nostalgia—one prompted by pop culture…",
+      "data": "2026-08-22",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "36818c08b8ff",
+      "fonte_id": "nyrb",
+      "fonte": "The New York Review of Books",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "‘I Don’t Want Dead Art’",
+      "url": "https://www.nybooks.com/online/2026/08/22/i-dont-want-dead-art-tina-girouard/",
+      "resumo": "When the artifacts of an artist’s life are collected as an archive, they change from river to reservoir, their ideas no longer circulating in the artist’s mind but left for others to navigate. Orienting oneself in the archive of a performance artist can be especially fraught…",
+      "data": "2026-08-22",
+      "gestos": [
+        "historicizar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "1d133e50814e",
+      "fonte_id": "nyrb",
+      "fonte": "The New York Review of Books",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "‘The Voodoo Thing’",
+      "url": "https://www.nybooks.com/online/2026/08/23/the-voodoo-thing-dr-john-david-toop/",
+      "resumo": "One afternoon around 1990, as a teenager working my after-school job in an optometrist’s basement office, I was listening to a local college radio station when the DJ, needing a break, decided to play the entire B-side of a record. I had never heard anything like it. Sludgy…",
+      "data": "2026-08-23",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 18
+    },
+    {
+      "id": "303cdbc78eb6",
+      "fonte_id": "mekong-review",
+      "fonte": "Mekong Review",
+      "continente": "asia",
+      "pais": "Sudeste Asiático",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "A frontline medic in Bago Philip Bahardu and John Quinley III",
+      "url": "https://mekongreview.com/a-frontline-medic-in-bago/",
+      "resumo": "A former teacher turned resistance medic supports civilians and fighters in the revolution against the Myanmar military junta. The post A frontline medic in Bago Philip Bahardu and John Quinley III appeared first on Mekong Review .",
+      "data": "2026-08-09",
+      "gestos": [
+        "avaliar",
+        "contraler"
+      ],
+      "score": 17
+    },
+    {
+      "id": "f0f2c1a4b837",
+      "fonte_id": "kyoto-journal",
+      "fonte": "Kyoto Journal",
+      "continente": "asia",
+      "pais": "Japão",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Visual Metaphor, Niwa Yuta, and the Mysterious Ōsanshōuo",
+      "url": "https://kyotojournal.org/culture-arts/visual-metaphor-niwa-yuta-and-the-mysterious-osanshouo/",
+      "resumo": "LANE DIKO Interpretation and translation: Yamada Mariko Gigantic salamanders, monstrous fish, chimeric tigers… In his portrayal of such fantastic beasts, the painter Niwa Yuta draws on a long artistic tradition of expressing the awesome power of nature through metaphoric visual…",
+      "data": "2025-11-24",
+      "gestos": [
+        "interpretar",
+        "deslocar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "2b08ec591d84",
+      "fonte_id": "jrb",
+      "fonte": "The Johannesburg Review of Books",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "[Sponsored] A chilling portrait of a shadow state—Kyle Cowan exposes 12 of South Africa’s deadliest cartels in Mafia Land",
+      "url": "https://johannesburgreviewofbooks.com/2025/12/15/sponsored-a-chilling-portrait-of-a-shadow-state-kyle-cowan-exposes-12-of-south-africas-deadliest-cartels-in-mafia-land/",
+      "resumo": "Penguin Random House SA has shared an excerpt from Mafia Land: Inside South Africa’s Darkest Cartels, in which multi-award-winning journalist Kyle...",
+      "data": "2025-12-15",
+      "gestos": [
+        "descrever",
+        "disputar-valor"
+      ],
+      "score": 14
+    },
+    {
+      "id": "44e6ff04e203",
+      "fonte_id": "chimurenga",
+      "fonte": "Chimurenga Chronic",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "MARIO, A FILM BY BILLY WOODBERRY",
+      "url": "https://chimurengachronic.co.za/mario-a-film-by-billy-woodberry/",
+      "resumo": "A rare screening of MARIO, Billy Woodberry's long-awaited film on the revolutionary Mario Pinto de Andrade, 19 August from 7pm",
+      "data": "2026-07-28",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "0f4890bb4ae1",
+      "fonte_id": "nplusone",
+      "fonte": "n+1",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "The Fan Zone",
+      "url": "https://www.nplusonemag.com/online-only/gooooaaal/the-fan-zone/",
+      "resumo": "The fan doesn’t stop at liking their object, they co-create it in both social and artisanal modes. In soccer we might say: You don’t become a fan when you think “soy hincha de la seleccíon,” but when you sing it. Playing for the national team, for many, is the pinnacle—the…",
+      "data": "2026-07-30",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "57995568168a",
+      "fonte_id": "451-mhz",
+      "fonte": "451 MHz",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "podcast",
+      "no_plano": false,
+      "titulo": "#206 Guerras culturais de ontem e hoje – Rui Tavares",
+      "url": "b25cb4ce-85fb-43f4-a428-ce4293edc5df",
+      "resumo": "Nesta semana, o 451 MHz recebe o historiador e deputado português Rui Tavares para falar sobre seu livro Hipocritões e Olhigarcas, um panorama histórico das guerras culturais, da virada do século 20 até os dias de hoje. O historiador explica a origem do título, cunhado para…",
+      "data": "2026-07-31",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "ab40ce39d679",
+      "fonte_id": "lrb",
+      "fonte": "London Review of Books",
+      "continente": "europa",
+      "pais": "Reino Unido",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Emily Wilson: An Uncomplicated Man",
+      "url": "https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man",
+      "resumo": "The representation of Odysseus as a reluctant warlord makes a nonsense of The Odyssey’s imagined world. We are not shown that war or killing are bad, only that good men sometimes feel bad about it – a very different point.",
+      "data": "2026-07-31",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "f9cd87617f1f",
+      "fonte_id": "lrb",
+      "fonte": "London Review of Books",
+      "continente": "europa",
+      "pais": "Reino Unido",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Erin Maglaque: Green into Gold",
+      "url": "https://www.lrb.co.uk/the-paper/v48/n14/erin-maglaque/green-into-gold",
+      "resumo": "One​ morning in October 1552, Felix Platter left his hometown of Basel for Montpellier, where he was to study medicine. He was fifteen years old. Things started to happen to him, and he wrote them down in his Tagebuch, his daybook.",
+      "data": "2026-07-31",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "7168b2a9c324",
+      "fonte_id": "nplusone",
+      "fonte": "n+1",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Let Everything Change",
+      "url": "https://www.nplusonemag.com/online-only/online-only/let-everything-change/",
+      "resumo": "I became a Sonny Rollins fan on my 13th birthday, when my dad took me for the first time to his favorite record store in Portland, Oregon. He gave me $50, which in 1987, netted me twelve LPs. One was a European bootleg of Moving Out. It was only two bucks, and I was drawn […]",
+      "data": "2026-07-31",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "68aa3e1c7073",
+      "fonte_id": "lrb",
+      "fonte": "London Review of Books",
+      "continente": "europa",
+      "pais": "Reino Unido",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Michael Kulikowski: Polar Bears in Rome",
+      "url": "https://www.lrb.co.uk/the-paper/v48/n14/michael-kulikowski/polar-bears-in-rome",
+      "resumo": "Over the past two generations, the boundaries of the classical world have been stretched to the steppe frontier of China, the coasts of Kerala and Sri Lanka, the Gulf of Aden and Ethiopia. But Scandinavia and the Baltic have remained stubbornly invisible. Skre’s book gives…",
+      "data": "2026-07-31",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "2977a1f7992f",
+      "fonte_id": "lrb",
+      "fonte": "London Review of Books",
+      "continente": "europa",
+      "pais": "Reino Unido",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Patricia Lockwood: The World",
+      "url": "https://www.lrb.co.uk/the-paper/v48/n14/patricia-lockwood/the-world",
+      "resumo": "A thread of light travelled through the beadWith the map of the world on it.No one’s keeping the plot I said.The marriage plot, man versusWilderness plot – there are more,But I forget....",
+      "data": "2026-07-31",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "214ea68fbaaa",
+      "fonte_id": "lrb",
+      "fonte": "London Review of Books",
+      "continente": "europa",
+      "pais": "Reino Unido",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "T.J. Clark: Night Visitors",
+      "url": "https://www.lrb.co.uk/the-paper/v48/n14/t.j.-clark/night-visitors",
+      "resumo": "The world exceeds us. It comes to us out of darkness. The cave is the universe, the nightly presence of that unknown glitter. What is it, this blackness? Where are they, the lights? Are they, is it, plural or singular? Where are we? The caves are a kind of shelter, but just as…",
+      "data": "2026-07-31",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "c8c94848fff6",
+      "fonte_id": "lrb",
+      "fonte": "London Review of Books",
+      "continente": "europa",
+      "pais": "Reino Unido",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Tony Wood: Maximum Pressure",
+      "url": "https://www.lrb.co.uk/the-paper/v48/n14/tony-wood/maximum-pressure",
+      "resumo": "If every accusation is a confession, then the US State Department report released on 20 July, which describes Cuba as ‘the capital of 21st-century communism’, must rank as one of the most deranged self-denunciations on record.",
+      "data": "2026-07-31",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "2e8f560923fe",
+      "fonte_id": "africa-is-a-country",
+      "fonte": "Africa Is a Country",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Sovereign rot",
+      "url": "https://africasacountry.com/2026/08/sovereign-rot",
+      "resumo": "In the heart of Ikoyi, Lagos, a fifteen-story concrete ghost haunts the skyline. The Old Federal Secretariat was once a nerve center of Nigerian power, functioning as the heart of Nigeria’s civil service. Since the federal capital was moved to Abuja in 1991, this complex has…",
+      "data": "2026-08-03",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "dea93e086bc0",
+      "fonte_id": "africa-is-a-country",
+      "fonte": "Africa Is a Country",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "The price of potential",
+      "url": "https://africasacountry.com/2026/08/the-price-of-potential",
+      "resumo": "At first glance, the cramped quarters of Mafalala, the largest informal settlement in Mozambique’s capital, Maputo, seem to leave barely enough room to play a pass, let alone carve out a football pitch. However, as you weave through the labyrinth of madeira-e-zinco (wood and…",
+      "data": "2026-08-04",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "fadd1b025187",
+      "fonte_id": "africa-is-a-country",
+      "fonte": "Africa Is a Country",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "The prosecutions that never happen",
+      "url": "https://africasacountry.com/2026/08/the-prosecutions-that-never-happen",
+      "resumo": "There is a specific kind of Nigerian newspaper headline I have been reading my whole life. It announces that a former governor, or a minister, or a director-general has been arraigned by the Economic and Financial Crimes Commission (EFCC). There are charges. There are counts.…",
+      "data": "2026-08-05",
+      "gestos": [
+        "interpretar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "1923b657aea0",
+      "fonte_id": "africa-is-a-country",
+      "fonte": "Africa Is a Country",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Between feminism and pan-Africanism",
+      "url": "https://africasacountry.com/2026/08/between-feminism-and-pan-africanism",
+      "resumo": "I read the draft African Charter on Family, Sovereignty and Values the way you read a letter from someone you used to trust. For pages, I was nodding, smiling even. Then I reached my own body on the page, and I understood what the document had done: it had stapled together two…",
+      "data": "2026-08-06",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "de316c844b5c",
+      "fonte_id": "451-mhz",
+      "fonte": "451 MHz",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "podcast",
+      "no_plano": false,
+      "titulo": "#207 Formar nossos filhos – Luciana Temer e Marina Helou",
+      "url": "fb56436d-6e06-4667-a58a-14ad341dcf7c",
+      "resumo": "Neste episódio do 451 MHz, a advogada Luciana Temer e a deputada estadual por SP Marina Helou discutem como proteger crianças e adolescentes dos riscos em duas frentes que se cruzam: a violência sexual infantil e os impactos das telas na infância. Na conversa, as autoras de…",
+      "data": "2026-08-07",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "23a6e43a4dbc",
+      "fonte_id": "africa-is-a-country",
+      "fonte": "Africa Is a Country",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "A border spectacle",
+      "url": "https://africasacountry.com/2026/08/ceuta-a-border-spectacle",
+      "resumo": "What happened last Thursday in Ceuta was a border spectacle of surprising scale and scope. Tens of thousands of mainly young fellow Moroccans stormed the gates while others braved the water to enter the enclave. All the elements of the spectacle were there: from images of…",
+      "data": "2026-08-07",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "4ac9cc2b9a39",
+      "fonte_id": "mekong-review",
+      "fonte": "Mekong Review",
+      "continente": "asia",
+      "pais": "Sudeste Asiático",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Church in the mountains Zachary Tang",
+      "url": "https://mekongreview.com/church-in-the-mountains/",
+      "resumo": "In the mountains of the Nujiang region, China, the Catholic faith has been shaped by generations of isolation and woven into local custom and ritual. The post Church in the mountains Zachary Tang appeared first on Mekong Review .",
+      "data": "2026-08-09",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "14a967b16bb1",
+      "fonte_id": "mekong-review",
+      "fonte": "Mekong Review",
+      "continente": "asia",
+      "pais": "Sudeste Asiático",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Letter from the mudflats Hai-Dang Phan",
+      "url": "https://mekongreview.com/letter-from-the-mudflats/",
+      "resumo": "A father and son travel to experience Vietnam through the birds that call it home, even if only for a little while. The post Letter from the mudflats Hai-Dang Phan appeared first on Mekong Review .",
+      "data": "2026-08-09",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "670021754b82",
+      "fonte_id": "mekong-review",
+      "fonte": "Mekong Review",
+      "continente": "asia",
+      "pais": "Sudeste Asiático",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "No one owes you a living Kirsten Han",
+      "url": "https://mekongreview.com/no-one-owes-you-a-living/",
+      "resumo": "Singapore proudly declares itself a “pro-family” nation. But in Unease: Life in Singapore Families, Teo You Yenn uncovers a sense of unease among Singaporean parents from all walks of life. The post No one owes you a living Kirsten Han appeared first on Mekong Review .",
+      "data": "2026-08-09",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "70bfd1219739",
+      "fonte_id": "mekong-review",
+      "fonte": "Mekong Review",
+      "continente": "asia",
+      "pais": "Sudeste Asiático",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Stand and fight Calum Stuart",
+      "url": "https://mekongreview.com/stand-and-fight/",
+      "resumo": "The way Daniel York Loh, a London-based actor of Singaporean and British heritage, sees it, there’s no way anyone can resist rising facism simply by being ‘reasonable’ and ‘sensible’. The post Stand and fight Calum Stuart appeared first on Mekong Review .",
+      "data": "2026-08-09",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "c1e7619a00ac",
+      "fonte_id": "mekong-review",
+      "fonte": "Mekong Review",
+      "continente": "asia",
+      "pais": "Sudeste Asiático",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "The cost of visibility Nathalie Chi",
+      "url": "https://mekongreview.com/the-cost-of-visibility/",
+      "resumo": "For the Tibetan community in London, the upcoming Chinese mega-embassy at Royal Mint Court is just another physical manifestation of the surveillance and climate of fear they have to navigate. The post The cost of visibility Nathalie Chi appeared first on Mekong Review .",
+      "data": "2026-08-09",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "7d4df1941b93",
+      "fonte_id": "nplusone",
+      "fonte": "n+1",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Barclay Blues",
+      "url": "https://www.nplusonemag.com/online-only/online-only/barclay-blues/",
+      "resumo": "At its most abstract, the draft is simply a convocation of middlemen-orbited teenagers at the Barclays Center, who, at the discretion of other men in rooms far away, will very soon be called up on stage to put on a hat and respectfully embrace a very tall, very pale man, at…",
+      "data": "2026-08-10",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "5f1727ec8cac",
+      "fonte_id": "africa-is-a-country",
+      "fonte": "Africa Is a Country",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "On Safari",
+      "url": "https://africasacountry.com/2026/08/on-safari-2026-8",
+      "resumo": "Ever since the World Cup concluded with Spain’s emphatic triumph over universally loathed Argentina (at least it felt this way), it has no longer felt like everyone is looking in the same direction at the same time. For a month and a bit, football’s biggest stage gave us one of…",
+      "data": "2026-08-10",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "ea58a23d680b",
+      "fonte_id": "overland",
+      "fonte": "Overland",
+      "continente": "oceania",
+      "pais": "Austrália",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Perth’s reservoirs are near empty: how Australia’s sunniest city is quietly running out of water",
+      "url": "https://overland.org.au/2026/08/perths-reservoirs-are-near-empty-how-australias-sunniest-city-is-quietly-running-out-of-water/",
+      "resumo": "We have built our cities on the quiet delusion that a turning tap is an infinite resource. We plant green lawns around our houses and water public parks in the middle of summer. As long as the water flows when they turn on the tap, people rarely think about where it comes from.…",
+      "data": "2026-08-10",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "2bb5b195a0f8",
+      "fonte_id": "chimurenga",
+      "fonte": "Chimurenga Chronic",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "THEO PARRISH LIVE AT CHIMURENGA FACTORY, CAPE TOWN",
+      "url": "https://chimurengachronic.co.za/theo-parrish-live-at-chimurenga-factory-cape-town/",
+      "resumo": "04 December 2026, tickets available on quicket now!",
+      "data": "2026-08-10",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "f258f16f309d",
+      "fonte_id": "chimurenga",
+      "fonte": "Chimurenga Chronic",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "CHIMURENGA – REVAMPING OUR WEBSITE",
+      "url": "https://chimurengachronic.co.za/chimurenga-revamping-our-website/",
+      "resumo": "Thank you for visiting the official Chimurenga Chronic website. We are currently updating our digital platforms to make them better than ever. While this may take time, follow here to stay up to date with our latest events & publications",
+      "data": "2026-08-11",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "5ebbbd18bc4c",
+      "fonte_id": "overland",
+      "fonte": "Overland",
+      "continente": "oceania",
+      "pais": "Austrália",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "JRR Tolkien, anti-fascist",
+      "url": "https://overland.org.au/2026/08/jrr-tolkien-anti-fascist/",
+      "resumo": "Eutastrophe is an alternative to the jack-boot and to the cruelty of fascism. It is people of goodwill, agreeing to co-operate, despite that all divides us.It is not the world that most anti-fascists would create. It is a society of stout property-owners projected both into the…",
+      "data": "2026-08-12",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "70f6c3e34a82",
+      "fonte_id": "nplusone",
+      "fonte": "n+1",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Samuel Stein and Nikil Saval in conversation",
+      "url": "https://www.nplusonemag.com/online-only/events/samuel-stein-and-nikil-saval-in-conversation/",
+      "resumo": "A celebration of A Right to Housing?",
+      "data": "2026-08-12",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "5dd6c2b3276f",
+      "fonte_id": "public-books",
+      "fonte": "Public Books",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Conflicted Futures, Convex Literatures",
+      "url": "https://www.publicbooks.org/conflicted-futures-convex-literatures/",
+      "resumo": "“The novel’s distinctive capacity for revealing unexpected links can shed new light on how we consider and counter crises.” The post Conflicted Futures, Convex Literatures appeared first on Public Books .",
+      "data": "2026-08-13",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "b02888531631",
+      "fonte_id": "451-mhz",
+      "fonte": "451 MHz",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "podcast",
+      "no_plano": false,
+      "titulo": "#208 Se a ficção me chamar eu vou - Carla Madeira e Mariana Salomão Carrara",
+      "url": "62618e1b-02bd-42dd-97f9-78cbebaf7cf5",
+      "resumo": "Duas das autoras mais lidas do Brasil, Carla Madeira e Mariana Salomão Carrara revelam neste episódio o que mais as atrai na ficção: criar histórias e personagens diferentes delas. Madeira acabou de lançar seu quarto romance, Quando (Record), enquanto Salomão Carrara publicou,…",
+      "data": "2026-08-14",
+      "gestos": [
+        "historicizar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "970ce760f96d",
+      "fonte_id": "overland",
+      "fonte": "Overland",
+      "continente": "oceania",
+      "pais": "Austrália",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Almost sex",
+      "url": "https://overland.org.au/2026/08/almost-sex/",
+      "resumo": "I take my body to the movies. I pay for a seat in the back row and feed her popcorn while the opening credits roll. It’s a thriller, one of those recent ones made to look old. I guess at who the killer will turn out to be. My body clenches when the virgin is stabbed in the…",
+      "data": "2026-08-14",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "651759eb2db1",
+      "fonte_id": "nplusone",
+      "fonte": "n+1",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Hockey Is For Everyone",
+      "url": "https://www.nplusonemag.com/online-only/online-only/hockey-is-for-everyone/",
+      "resumo": "Entering an era of super-teams and diva stars who insist on winning now and getting maximally paid, the NHL is more and more reminiscent of the NBA at its worst: A hypermediated, personality-driven PR event masquerading as a mostly noncompetitive sports league. NHL Commissioner…",
+      "data": "2026-08-14",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "16d0e662853d",
+      "fonte_id": "public-books",
+      "fonte": "Public Books",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "How I Learned to Fear AI",
+      "url": "https://www.publicbooks.org/how-i-learned-to-fear-ai/",
+      "resumo": "“This encyclical lacks the force of a papal bull and carries no claim of papal infallibility. Instead, Leo made his case with words and words alone.” The post How I Learned to Fear AI appeared first on Public Books .",
+      "data": "2026-08-14",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 14
+    },
+    {
+      "id": "ff28c42ad066",
+      "fonte_id": "kyoto-journal",
+      "fonte": "Kyoto Journal",
+      "continente": "asia",
+      "pais": "Japão",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "From Farm to Fashion: The (re)Birth of Silk Weaving in Japan",
+      "url": "https://kyotojournal.org/culture-arts/from-farm-to-fashion-the-rebirth-of-silk-weaving-in-japan/",
+      "resumo": "Despite the number of threads in its fabric, the value of a kimono “worth its weight in gold” is not always reflected the actual weight. In the case of the silk made by Katsuyama Takeshi, this is certainly true. Its lightness is indicative not only of a delicately hand-reeled…",
+      "data": "2025-10-17",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "480a31b1e4e5",
+      "fonte_id": "kyoto-journal",
+      "fonte": "Kyoto Journal",
+      "continente": "asia",
+      "pais": "Japão",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "CURATION⇄FAIR Kyoto 2025- Art, Craft, and Culture (Free Tickets for Kyoto Journal Readers)",
+      "url": "https://kyotojournal.org/culture-arts/curation-fair-kyoto-2025-art-craft-and-culture-free-tickets-for-kyoto-journal-readers/",
+      "resumo": "by Lewis Miesen Traditional and contemporary art meet in Kyoto’s gardens and temples, creating dialogues between time, culture, and nature. CURATION⇄FAIR Kyoto 2025 brings together galleries, artists, and artisans from November 15th to 18th, showcasing exhibitions and cultural…",
+      "data": "2025-10-31",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "edc6e51646c1",
+      "fonte_id": "kyoto-journal",
+      "fonte": "Kyoto Journal",
+      "continente": "asia",
+      "pais": "Japão",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Review: Words by Baye, Art by Miki",
+      "url": "https://kyotojournal.org/reviews/review-words-by-baye-art-by-miki/",
+      "resumo": "By Lewis Miesen Words By Baye, Art by Miki: Crafting a Life Together with Affection, Creativity, and Resilience by Baye McNeil and Miki Hayashi McNeil. Tokyo: Hunterfly Road Publishing, 443pp. ¥3472 This witty and heartfelt commentary on life in Japan by Baye McNeil, who has…",
+      "data": "2025-10-31",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "bedc866658e0",
+      "fonte_id": "kyoto-journal",
+      "fonte": "Kyoto Journal",
+      "continente": "asia",
+      "pais": "Japão",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Africans in Japan: A New Diaspora",
+      "url": "https://kyotojournal.org/culture-arts/africans-in-japan-a-new-diaspora/",
+      "resumo": "by Solène Bouda The African diaspora is one of the smallest but fastest-growing minority communities in Japan. Africans represent less than 1% of all foreign residents in Japan, yet within the last 30 years, their numbers have increased from a mere 1,000 in 1985 to 12,000 in…",
+      "data": "2025-11-08",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "f234545fb00a",
+      "fonte_id": "jrb",
+      "fonte": "The Johannesburg Review of Books",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Can we engage with power without being corrupted by it? Sean Jacobs reviews Mahmood Mamdani’s new book, Slow Poison: Idi Amin, Yoweri Museveni, and the Making of the Ugandan State",
+      "url": "https://johannesburgreviewofbooks.com/2025/12/15/can-we-engage-with-power-without-being-corrupted-by-it-sean-jacobs-reviews-mahmood-mamdanis-new-book-slow-poison-idi-amin-yoweri-museveni-and-the-making-of-the-ugandan-state/",
+      "resumo": "Sean Jacobs reviews Slow Poison by Mahmood Mamdani, a rich and textured account of Ugandan and postcolonial African politics, and...",
+      "data": "2025-12-15",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "b65a8aa94d43",
+      "fonte_id": "jrb",
+      "fonte": "The Johannesburg Review of Books",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "The JRB Fiction Issue! (Vol. 9, Issue 3, December 2025)",
+      "url": "https://johannesburgreviewofbooks.com/2025/12/15/the-jrb-fiction-issue-vol-9-issue-3-december-2025/",
+      "resumo": "Wamuwi Mbao • Makhosazana Xaba • Simon van Schalkwyk • Khadija Tracey Heeger • Sean Jacobs • Barbara Boswell •...",
+      "data": "2025-12-15",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "4b579feda400",
+      "fonte_id": "jrb",
+      "fonte": "The Johannesburg Review of Books",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "[Sponsored] Listen to an excerpt from Cursed Daughters—the glittering follow-up to the award-winning bestseller My Sister, the Serial Killer",
+      "url": "https://johannesburgreviewofbooks.com/2025/12/15/sponsored-listen-to-an-excerpt-from-cursed-daughters-the-glittering-follow-up-to-the-award-winning-bestseller-my-sister-the-serial-killer/",
+      "resumo": "Cursed Daughters—the highly anticipated new novel from Oyinkan Braithwaite—is out now from Jonathan Ball Publishers! Braithwaite is a Nigerian–British novelist...",
+      "data": "2025-12-15",
+      "gestos": [
+        "disputar-valor"
+      ],
+      "score": 11
+    },
+    {
+      "id": "6a80095187bf",
+      "fonte_id": "jrb",
+      "fonte": "The Johannesburg Review of Books",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "‘A reluctant, complicated love story spanning the globe and a myriad natural disasters’—Barbara Boswell reviews Ice Shock by Elleke Boehmer",
+      "url": "https://johannesburgreviewofbooks.com/2025/12/15/a-reluctant-complicated-love-story-spanning-the-globe-and-a-myriad-natural-disasters-barbara-boswell-reviews-ice-shock-by-elleke-boehmer/",
+      "resumo": "Barbara Boswell reviews Elleke Boehmer’s Ice Shock, a novel saturated with extremes of love and increasingly calamitous climate events. Ice...",
+      "data": "2025-12-15",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "dd071d680627",
+      "fonte_id": "jrb",
+      "fonte": "The Johannesburg Review of Books",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "‘Always in search of uncompromising honesty in a compromised and compromising world’—Kevin Goddard reviews Kelwyn Sole’s latest collection of poetry, What is Owed?",
+      "url": "https://johannesburgreviewofbooks.com/2025/12/15/always-in-search-of-uncompromising-honesty-in-a-compromised-and-compromising-world-kevin-goddard-reviews-kelwyn-soles-latest-collection-of-poetry-what-is-owed/",
+      "resumo": "Kevin Goddard reviews What is Owed? by Kelwyn Sole—a poet’s summing up of a life dedicated both to verse and...",
+      "data": "2025-12-15",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "a373c60f5aa1",
+      "fonte_id": "kyoto-journal",
+      "fonte": "Kyoto Journal",
+      "continente": "asia",
+      "pais": "Japão",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "The Cutting Edge – Kyotographie 2026",
+      "url": "https://kyotojournal.org/heartwork/the-cutting-edge-kyotographie-2026-a-review-by-lane-diko/",
+      "resumo": "Photographs by Lane Diko Kyotographie 2026 has launched EDGE, its 13th iteration, having completed the full 12-year cycle of the Chinese zodiac last year and now beginning a new one. Their 2025 book KYOTOGRAPHIE: A Kyoto Story—A Twelve-Year Cycle is both a compendium and…",
+      "data": "2026-05-04",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "43403ccd4471",
+      "fonte_id": "four-columns",
+      "fonte": "4Columns",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "You Won’t Get Free of It",
+      "url": "https://4columns.org/beller-thomas/you-wont-get-free-of-it",
+      "resumo": "Denial, delusion, dissociation: a new book collects Rachel Aviv’s New Yorker essays about mothers and daughters. You Won’t Get Free of It: Stories of Mothers and Daughters, by Rachel Aviv, Alfred A. Knopf, 223 pages, $30 • ...",
+      "data": "2026-06-19",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "4fc95f4fdb87",
+      "fonte_id": "four-columns",
+      "fonte": "4Columns",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Drunken Noodles",
+      "url": "https://4columns.org/anderson-melissa/drunken-noodles",
+      "resumo": "A river of bodily emissions runs through it: in Lucio Castro’s new film, the flow of erotic energy proves to be a mystical power. Laith Khalifeh as Adnan in Drunken Noodles. Courtesy Strand Releasing. © Lucio Castro. Drunken Noodles,...",
+      "data": "2026-06-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "e48d23219223",
+      "fonte_id": "four-columns",
+      "fonte": "4Columns",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Greater New York",
+      "url": "https://4columns.org/d-souza-aruna/greater-new-york",
+      "resumo": "A galvanizing exhibition at PS1 showcases NYC art made by and for the people. Greater New York, installation view. Courtesy MoMA PS1. Photo: Kris Graves. Pictured, left: fields harrington, Unfree Free Time (Bike Rental), 2026. Right: Cevallos...",
+      "data": "2026-06-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "692a57cd0b41",
+      "fonte_id": "four-columns",
+      "fonte": "4Columns",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "Incinarration",
+      "url": "https://4columns.org/dillon-brian/incinarration",
+      "resumo": "Hélène Cixous weaves intersecting timescales to relay a multigenerational story of flight and fire. Incinarration: What Do We Carry?, by Hélène Cixous, translated by Peggy Kamuf, Seagull Books, 129 pages,...",
+      "data": "2026-06-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "595f63a8c007",
+      "fonte_id": "four-columns",
+      "fonte": "4Columns",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "This Poor Book",
+      "url": "https://4columns.org/frere-jones-sasha/this-poor-book",
+      "resumo": "In her final collection, Fanny Howe witnesses the same world we all see. This Poor Book: A Poem, by Fanny Howe, Graywolf Press, 132 pages, $18 • • • “I don’t think I have written a book...",
+      "data": "2026-06-26",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "22639ab3e8cf",
+      "fonte_id": "four-columns",
+      "fonte": "4Columns",
+      "continente": "america-do-norte",
+      "pais": "Estados Unidos",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "4Columns",
+      "url": "https://4columns.org/to-2026-from-2016/4columns",
+      "resumo": "4Columns was an online magazine of arts criticism in publication from September 23, 2016 to June 26, 2026. Funded by a private foundation, the project was established with a budget to cover ten years and was conceived as a finite...",
+      "data": "2026-07-03",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "811ad473872d",
+      "fonte_id": "chimurenga",
+      "fonte": "Chimurenga Chronic",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "DIPALO: a mixtape for those who practice counting by Neo Muyanga",
+      "url": "https://chimurengachronic.co.za/dipalo-a-mixtape-for-those-who-practice-counting-by-neo-muyanga/",
+      "resumo": "Listen to this mixtape from our sound library, composed to accompany the first edition of Chimurenga Chronic",
+      "data": "2026-07-13",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "73160894c43e",
+      "fonte_id": "himal",
+      "fonte": "Himal Southasian",
+      "continente": "asia",
+      "pais": "Ásia do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "A Gujarati Dalit writer reckons with Gandhi’s fraught legacy",
+      "url": "https://www.himalmag.com/chandu-maheria-gujarat-dalit-history-gandhi/",
+      "resumo": "An excerpt from Chandu Maheria’s memoir, reflecting on growing up in Ahmedabad’s working-class chawls and the place of Mohandas K Gandhi in Dalit life and political thought",
+      "data": "2026-07-15",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "31ba56e9d03d",
+      "fonte_id": "chimurenga",
+      "fonte": "Chimurenga Chronic",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "MY COUNTRY, TONIGHT 30TH JUNE 2026",
+      "url": "https://chimurengachronic.co.za/my-country-tonight-30th-june-2026/",
+      "resumo": "MY COUNTRY, TONIGHT 30TH JUNE 2026 Broadcasting LIVE on Pan African Space Station from 7pm",
+      "data": "2026-07-15",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "2433d9040f14",
+      "fonte_id": "451-mhz",
+      "fonte": "451 MHz",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "podcast",
+      "no_plano": false,
+      "titulo": "#204 Escrever para lembrar — Lídia Jorge",
+      "url": "ea8c25a1-b880-4ff9-8966-5a45b241b85c",
+      "resumo": "A escritora portuguesa Lídia Jorge, que acaba de vencer o Prêmio Camões, o mais importante da nossa língua, fala neste episódio sobre seus romances Misericórdia e Diante da Manta do Soldado, publicados pela Autêntica Contemporânea. A autora conta como transformou Misericórdia,…",
+      "data": "2026-07-17",
+      "gestos": [
+        "disputar-valor"
+      ],
+      "score": 11
+    },
+    {
+      "id": "b3c9e23de329",
+      "fonte_id": "chimurenga",
+      "fonte": "Chimurenga Chronic",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": false,
+      "titulo": "STORIES ABOUT MUSIC IN AFRICA – VOLUME 2",
+      "url": "https://chimurengachronic.co.za/stories-about-music-in-africa-volume-2/",
+      "resumo": "Introducing Stories About Music in Africa - Vol. 2, a limited edition handmade box set featuring four nyanas from our series on music",
+      "data": "2026-07-20",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    },
+    {
+      "id": "f1094d990730",
+      "fonte_id": "451-mhz",
+      "fonte": "451 MHz",
+      "continente": "america-do-sul",
+      "pais": "Brasil",
+      "lingua": "pt",
+      "canal": "podcast",
+      "no_plano": false,
+      "titulo": "#205 As lentes da poesia – Ana Guadalupe",
+      "url": "1685fb81-e45e-4f5e-ab55-d9bbbb6b4e54",
+      "resumo": "A poesia nos faz enxergar melhor? Neste episódio do 451 MHz, a poeta Ana Guadalupe conta como transformou a própria miopia em uma chave para ver de forma mais nítida a cidade e a vida. Brincando com a vista distorcida, os poemas de seu novo livro Ensino à Distância (Companhia…",
+      "data": "2026-07-24",
+      "gestos": [
+        "avaliar"
+      ],
+      "score": 11
+    }
+  ]
+}

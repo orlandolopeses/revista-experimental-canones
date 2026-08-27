@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Nota de sala da Aula 1 (11/08): diagnóstico de vocabulário — cânone e crítica.">
-  <title>Duas palavras, e nenhuma simples — Revista Experimental de Crítica Literária</title>
+  <meta name="description" content="Radar e clippings de crítica literária minerados nos veículos do plano DLT13973 e em canais extras.">
+  <title>Radar — Revista Experimental de Crítica Literária</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -33,28 +33,25 @@
       <nav class="sections" aria-label="Seções">
         <a href="../index.html">Edição zero</a>
         <a href="../pecas/o-que-pode-a-critica.html">Crítica</a>
-        <a href="index.html" aria-current="page">Sala</a>
+        <a href="../sala/index.html">Sala</a>
         <a href="../equipes.html">Equipes</a>
-        <a href="../radar/index.html">Radar</a>
+        <a href="index.html" aria-current="page">Radar</a>
         <a href="../colaborar.html">Colaborar</a>
         <a href="../expediente.html">Expediente</a>
       </nav>
     </header>
     <main id="conteudo">
 
-    <header class="piece-head">
-      <p class="eyebrow">Nota de sala · 11 de agosto de 2026</p>
-      <h1>Duas palavras, e nenhuma simples</h1>
-      <p class="deck">Aula 1. Sala 105 do IC. A pergunta não era “quais escolas vamos estudar”. Era: o que a turma já chama de crítica — e o que isso ainda não dá conta de nomear.</p>
-      <p class="byline">Redação da turma · Cânones da crítica internacional</p>
+    <header class="page-intro">
+      <p class="eyebrow">Monitoramento</p>
+      <h1 class="page-title">Radar da crítica</h1>
+      <p class="deck">Sinais e clippings dos veículos do plano — e de outros canais que sindicam literatura. Não substitui a leitura. Mostra onde o valor está sendo fabricado agora.</p>
     </header>
-    <div class="prose">
-      <p>Primeiro encontro da optativa. Roda aberta, apresentações, duas palavras no centro da mesa: <em>cânone</em> e <em>crítica</em>. O professor localizou a disciplina no ensino superior e no ensino básico — para onde muita gente da turma vai. Especialista, neste começo, não é quem tem o diploma: é quem não se confunde no vocabulário de que precisa.</p>
-      <p>A manhã foi diagnóstico, não recorte literário. Kafka ficou para depois. O que entrou foi o ofício de separar: ideia, conceito, noção, definição não são a mesma coisa. Arte, na agência, pode ser um card do Canva; em Letras, é outra máquina. Sem esse corte, a crítica vira adjetivo de autoajuda.</p>
-      <p>Selecionar já é criticar. Indicar um livro à turma, escolher um autor para o mestrado, montar uma lista de leitura: cada gesto deixa de fora uma pilha. O cânone, dito com clareza, é convenção de valor — o que a crítica produz e o que a circulação social uniformiza. O melhor romance da vida de alguém não precisa ser canônico; o cânone é o padrão público.</p>
-      <p>Houve Kant sem seminário de pânico: faculdades do juízo, decisão, crise. Etimologia de trabalho: <em>krínein</em>, separar. Houve IA sem moralina prévia: o corpus humano, o livro destruído para virar treino, a pergunta sobre o que ainda conta como evidência. Fruição não é consumo. Conceição Evaristo e Carolina Maria de Jesus ao lado de Clarice: o valor se move, e o trabalho intelectual é justificar o movimento.</p>
-      <p>Produto da aula: um vocabulário em aberto e uma responsabilidade. A pirâmide de valor não cai pronta do céu. A turma começou a vê-la ser empilhada. <a href="index.html">Todas as notas de sala →</a></p>
-    </div>
+    <p class="prose" id="radar-meta">A varredura lê só o que o feed já publica: título, data, link, resumo. TLS, LARB, Sydney Review e Australian Book Review ficam como silêncio técnico — a equipe lê no site.</p>
+    <div id="radar-sinais" class="radar-sinais" hidden></div>
+    <div id="radar-filtros" class="radar-filtros" hidden></div>
+    <div id="radar-clips" class="notes"></div>
+    <p class="prose">Cada equipe devolve à redação o que o radar não vê: o gesto, a ausência, a língua que o feed apagou. <a href="../equipes.html">Ver as seis equipes →</a></p>
 
     </main>
   </div>
@@ -69,9 +66,9 @@
         <nav aria-label="Rodapé">
           <a href="../index.html">Edição zero</a>
           <a href="../pecas/o-que-pode-a-critica.html">Crítica</a>
-          <a href="index.html">Sala</a>
+          <a href="../sala/index.html">Sala</a>
           <a href="../equipes.html">Equipes</a>
-          <a href="../radar/index.html">Radar</a>
+          <a href="index.html">Radar</a>
           <a href="../colaborar.html">Colaborar</a>
           <a href="../expediente.html">Expediente</a>
         </nav>
@@ -90,5 +87,6 @@
     </div>
   </footer>
   <script src="../js/site.js"></script>
+  <script src="../js/radar.js"></script>
 </body>
 </html>

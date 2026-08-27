@@ -480,6 +480,80 @@ nav.sections.is-stuck {
   text-transform: uppercase;
 }
 
+.radar-sinais {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--rule);
+  margin: 0 0 1.6rem;
+}
+
+.radar-sinal {
+  padding: 1.15rem 1.4rem 1.25rem 0;
+  border-bottom: 1px solid var(--hair);
+  border-right: 1px solid var(--hair);
+}
+
+.radar-sinal:nth-child(2n) {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.radar-sinal h2 {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.25;
+  margin: 0 0 0.35rem;
+}
+
+.radar-sinal p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.radar-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1.2rem;
+}
+
+.radar-filtros button {
+  font-family: var(--sans);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+}
+
+.radar-filtros button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.radar-gestos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.55rem 0 0;
+}
+
+.radar-gestos span {
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid var(--hair);
+  padding: 0.12rem 0.4rem;
+}
+
 .prose h2 {
   font-family: var(--sans);
   font-size: 0.68rem;
@@ -843,7 +917,8 @@ footer.site {
   .teams,
   .redacao,
   .footer-inner,
-  .note-row {
+  .note-row,
+  .radar-sinais {
     grid-template-columns: 1fr;
   }
 
@@ -860,6 +935,12 @@ footer.site {
 
   .team:last-child {
     border-bottom: 0;
+  }
+
+  .radar-sinal,
+  .radar-sinal:nth-child(2n) {
+    padding-right: 0;
+    border-right: 0;
   }
 
   nav.sections {
