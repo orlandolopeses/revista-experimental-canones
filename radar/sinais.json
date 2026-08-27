@@ -1,5 +1,5 @@
 {
-  "gerado": "2026-08-27T11:51:59+00:00",
+  "gerado": "2026-08-27T11:54:00+00:00",
   "revista": "Revista Experimental de Crítica Literária",
   "disciplina": "DLT13973 · Cânones da crítica internacional",
   "fontes": 31,
@@ -335,22 +335,6 @@
       "href": "entradas/2026-08-26-passage-by-colin-thubron-review-mortality-and-me.html"
     },
     {
-      "id": "b1096d3998ce",
-      "slug": "2026-08-27-eze-ifowodo-and-oburumu-make-final-three-for-the",
-      "fonte": "Brittle Paper",
-      "continente": "africa",
-      "pais": "Nigéria",
-      "titulo": "Eze, Ifowodo, and Oburumu Make Final Three for the $100,000 Nigeria Prize for Literature 2026",
-      "url": "https://brittlepaper.com/2026/08/eze-ifowodo-and-oburumu-make-final-three-for-the-100000-nigeria-prize-for-literature-2026/",
-      "resumo": "The Nigeria Prize for Literature has narrowed its 2026 poetry field down to a shortlist of three: James Ngwu Eze’s Unbind Me Now, Ogaga Ifowodo’s Why Does God Need a Gun?, and Tares Oburumu’s Flora’s Love Colony. The three collections were selected from an initial pool of 223 entries, first cut down to a longlist […]",
-      "glosa": "Brittle Paper, Nigéria, faz circular esta peça no mapa da África. O veículo nomeia prêmio, lista ou cânone — a máquina à mostra. O trecho abaixo é o que o próprio feed já publicou — não uma paráfrase da redação. A leitura crítica continua no original.",
-      "data": "2026-08-27",
-      "gestos": [
-        "disputar-valor"
-      ],
-      "href": "entradas/2026-08-27-eze-ifowodo-and-oburumu-make-final-three-for-the.html"
-    },
-    {
       "id": "6a80095187bf",
       "slug": "2025-12-15-a-reluctant-complicated-love-story-spanning-the",
       "fonte": "The Johannesburg Review of Books",
@@ -365,6 +349,22 @@
         "avaliar"
       ],
       "href": "entradas/2025-12-15-a-reluctant-complicated-love-story-spanning-the.html"
+    },
+    {
+      "id": "f234545fb00a",
+      "slug": "2025-12-15-can-we-engage-with-power-without-being-corrupted",
+      "fonte": "The Johannesburg Review of Books",
+      "continente": "africa",
+      "pais": "África do Sul",
+      "titulo": "Can we engage with power without being corrupted by it? Sean Jacobs reviews Mahmood Mamdani’s new book, Slow Poison: Idi Amin, Yoweri Museveni, and the Making of the Ugandan State",
+      "url": "https://johannesburgreviewofbooks.com/2025/12/15/can-we-engage-with-power-without-being-corrupted-by-it-sean-jacobs-reviews-mahmood-mamdanis-new-book-slow-poison-idi-amin-yoweri-museveni-and-the-making-of-the-ugandan-state/",
+      "resumo": "Sean Jacobs reviews Slow Poison by Mahmood Mamdani, a rich and textured account of Ugandan and postcolonial African politics, and...",
+      "glosa": "The Johannesburg Review of Books, África do Sul, faz circular esta peça no mapa da África. O veículo julga um objeto e, ao julgar, instala valor. O trecho abaixo é o que o próprio feed já publicou — não uma paráfrase da redação. A leitura crítica continua no original.",
+      "data": "2025-12-15",
+      "gestos": [
+        "avaliar"
+      ],
+      "href": "entradas/2025-12-15-can-we-engage-with-power-without-being-corrupted.html"
     },
     {
       "id": "bcbd83e7f004",
@@ -1177,24 +1177,6 @@
       "data": "2026-08-27",
       "gestos": [
         "avaliar"
-      ],
-      "score": 23
-    },
-    {
-      "id": "b1096d3998ce",
-      "fonte_id": "brittle-paper",
-      "fonte": "Brittle Paper",
-      "continente": "africa",
-      "pais": "Nigéria",
-      "lingua": "en",
-      "canal": "site",
-      "no_plano": true,
-      "titulo": "Eze, Ifowodo, and Oburumu Make Final Three for the $100,000 Nigeria Prize for Literature 2026",
-      "url": "https://brittlepaper.com/2026/08/eze-ifowodo-and-oburumu-make-final-three-for-the-100000-nigeria-prize-for-literature-2026/",
-      "resumo": "The Nigeria Prize for Literature has narrowed its 2026 poetry field down to a shortlist of three: James Ngwu Eze’s Unbind Me Now, Ogaga Ifowodo’s Why Does God Need a Gun?, and Tares Oburumu’s Flora’s Love Colony. The three collections were selected from an initial pool of 223 entries, first cut down to a longlist […]",
-      "data": "2026-08-27",
-      "gestos": [
-        "disputar-valor"
       ],
       "score": 23
     },
@@ -2707,6 +2689,24 @@
       "url": "https://brittlepaper.com/2026/08/witsprouts-opens-nominations-for-second-storytelling-prize-worth-%e2%82%a6500000-deadline-september-30/",
       "resumo": "The Witsprouts Project, a cultural organisation dedicated to expanding participation in African arts and culture, has opened nominations for the second edition of the Witsprouts Storytelling Prize. Established to revive the art of oral storytelling while rewarding exceptional talent, the prize carries a cash award of ₦500,000 for this edition, with nominations open now through […]",
       "data": "2026-08-26",
+      "gestos": [
+        "disputar-valor"
+      ],
+      "score": 3
+    },
+    {
+      "id": "b1096d3998ce",
+      "fonte_id": "brittle-paper",
+      "fonte": "Brittle Paper",
+      "continente": "africa",
+      "pais": "Nigéria",
+      "lingua": "en",
+      "canal": "site",
+      "no_plano": true,
+      "titulo": "Eze, Ifowodo, and Oburumu Make Final Three for the $100,000 Nigeria Prize for Literature 2026",
+      "url": "https://brittlepaper.com/2026/08/eze-ifowodo-and-oburumu-make-final-three-for-the-100000-nigeria-prize-for-literature-2026/",
+      "resumo": "The Nigeria Prize for Literature has narrowed its 2026 poetry field down to a shortlist of three: James Ngwu Eze’s Unbind Me Now, Ogaga Ifowodo’s Why Does God Need a Gun?, and Tares Oburumu’s Flora’s Love Colony. The three collections were selected from an initial pool of 223 entries, first cut down to a longlist […]",
+      "data": "2026-08-27",
       "gestos": [
         "disputar-valor"
       ],
