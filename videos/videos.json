@@ -1,0 +1,25 @@
+{
+  "mesa": "Vídeos",
+  "itens": [
+    {
+      "id": "o-fim-da-globalizacao",
+      "data": "2026-08-28",
+      "titulo": "O fim da globalização",
+      "kicker": "Atila Iamarino",
+      "youtube": "AEF-mIBtOkI",
+      "cover": "../img/galeria/atila-iamarino.jpg",
+      "glosa": "O chão em que a crítica internacional circula deixa de ser um palco único. A redação aponta o diagnóstico, não o resume.",
+      "href": "../indicacoes/2026-08-28-o-fim-da-globalizacao.html"
+    },
+    {
+      "id": "o-futuro-das-eleicoes",
+      "data": "2026-08-28",
+      "titulo": "O futuro das eleições",
+      "kicker": "Miguel Nicolelis",
+      "youtube": "Tz_AZ2NJjoQ",
+      "cover": "../img/galeria/miguel-nicolelis.jpg",
+      "glosa": "O juízo público agora se fabrica em cortes. A crítica precisa ver o meio, não só o argumento.",
+      "href": "../indicacoes/2026-08-28-o-futuro-das-eleicoes.html"
+    }
+  ]
+}

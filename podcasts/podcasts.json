@@ -1,0 +1,45 @@
+{
+  "mesa": "Podcasts",
+  "itens": [
+    {
+      "id": "451-191-liberdade-critica",
+      "data": "2026-04-10",
+      "titulo": "Liberdade crítica",
+      "kicker": "451 MHz · Beatriz Resende",
+      "cover": "../img/galeria/451-191.jpg",
+      "audio": "https://traffic.libsyn.com/secure/451mhz/451MHz_ep191_v2.mp3?dest-id=1381697",
+      "href": "https://quatrocincoum.com.br/podcasts/repertorio-451-mhz/liberdade-critica/",
+      "glosa": "Para que serve a crítica quando o debate virou combate? Resende recusa o cancelamento como método — e devolve o ofício à conversa."
+    },
+    {
+      "id": "451-179-pe-na-critica",
+      "data": "2026-01-16",
+      "titulo": "Pé na crítica",
+      "kicker": "451 MHz · José Falero",
+      "cover": "../img/galeria/451-179.jpg",
+      "audio": "https://traffic.libsyn.com/secure/451mhz/451MHz_ep179_correcao.mp3?dest-id=1381697",
+      "href": "https://quatrocincoum.com.br/podcasts/repertorio-451-mhz/pe-na-critica/",
+      "glosa": "Quem define o que é literatura? Falero entra no debate forma versus conteúdo sem entregar o critério ao gosto."
+    },
+    {
+      "id": "451-111-olhar-da-critica",
+      "data": "2024-05-10",
+      "titulo": "O olhar da crítica",
+      "kicker": "451 MHz · Ligia Gonçalves Diniz e Júlio Pimentel Pinto",
+      "cover": "../img/galeria/451-111.jpg",
+      "audio": "https://traffic.libsyn.com/secure/451mhz/451MHz_111_MIX.mp3?dest-id=1381697",
+      "href": "https://quatrocincoum.com.br/podcasts/repertorio-451-mhz/o-olhar-da-critica/",
+      "glosa": "O papel da crítica quando a ficção disputa a experiência — e quando resta pouco espaço para a imaginação do leitor."
+    },
+    {
+      "id": "451-87-armadilha-candido",
+      "data": "2023-05-12",
+      "titulo": "Armadilha para Antonio Candido",
+      "kicker": "451 MHz · Sérgio Alcides",
+      "cover": "../img/galeria/451-87.jpg",
+      "audio": "https://traffic.libsyn.com/secure/451mhz/451MHZ_87_AntonioCandido_MIX.mp3?dest-id=1381697",
+      "href": "https://quatrocincoum.com.br/podcasts/repertorio-451-mhz/armadilha-para-antonio-candido/",
+      "glosa": "O sistema literário brasileiro como objeto, não como altar. Candido relido no veículo que esta revista toma por modelo."
+    }
+  ]
+}
