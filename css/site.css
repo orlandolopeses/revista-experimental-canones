@@ -956,6 +956,7 @@ form.cadastro {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+input[type="password"],
 select,
 textarea {
   width: 100%;
@@ -1036,6 +1037,56 @@ a.button:hover {
 button[type="submit"]:disabled {
   opacity: 0.45;
   cursor: not-allowed;
+}
+
+.mesa-sessao {
+  max-width: 40rem;
+  margin: 0 0 1.2rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+button.linkish {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+
+button.linkish:hover {
+  color: var(--accent-ink);
+  text-decoration: none;
+}
+
+.mesa-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1rem;
+  margin: 0 0 1rem;
+}
+
+button.ghost {
+  appearance: none;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.45rem;
+  cursor: pointer;
+}
+
+button.ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .hp {

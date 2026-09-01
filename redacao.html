@@ -47,23 +47,72 @@
     <header class="page-intro">
       <p class="eyebrow">Redação</p>
       <h1 class="page-title">Mesa da redação</h1>
-      <p class="deck">A revista é o veículo da turma. Quem já fez o cadastro escreve aqui. O texto não entra no ar sozinho: o editor responsável lê, e só então a peça se publica.</p>
+      <p class="deck">Quem já fez o cadastro escreve aqui. O rascunho fica neste navegador. Enviar não é publicar: o editor lê, e só então a peça entra no ar.</p>
     </header>
 
-    <div class="prose">
-      <p>A mesa não substitui o <a href="colaborar.html">cadastro editorial</a>. O cadastro organiza o ofício — crítica, edição, revisão, tradução, monitoramento, design, redes. A mesa é o gesto seguinte: assinar um texto e submetê-lo à revista.</p>
-      <h2>O que se publica</h2>
-      <p>Peças de crítica (ensaio, recensão, glosa, deslocamento) e indicações (um vídeo ou um podcast com o vocabulário da turma). O Radar continua a ser minerado pela redação; não se cola clipping no lugar de um caso. Notas de sala são do diário da disciplina — o editor as escreve.</p>
-      <h2>Como entrar</h2>
-      <ol>
-        <li>Ter uma conta no <a href="https://github.com/signup" rel="noopener noreferrer">GitHub</a>. O nome pode ser o de assinatura ou um handle; o byline do texto é outro campo.</li>
-        <li>Pedir ao editor responsável que convide essa conta no repositório da revista. Sem o convite, a mesa não abre.</li>
-        <li>Abrir a <a href="admin/">mesa</a>, entrar com o token do GitHub e criar a peça. Guardar não é publicar: o texto vai para revisão.</li>
-        <li>Quando o editor aceita, a peça aparece em <a href="pecas/index.html">Crítica</a> ou em <a href="indicacoes/index.html">Indicações</a>.</li>
-      </ol>
-      <p>A mesa pede um <strong>token</strong> do GitHub — não a senha, e não o botão que fala com a Netlify. No diálogo, use o link que já abre a página do GitHub com as permissões marcadas, gere o token, cole na mesa. Ele fica só neste navegador.</p>
-      <p>Quem ainda não foi convidado no repositório da revista vê a mesa, mas não entra. Peça o convite ao editor.</p>
-      <p><a href="admin/">Abrir a mesa →</a> · <a href="colaborar.html">Fazer o cadastro →</a> · <a href="mailto:orlando.albertino@ufes.br">Escrever ao editor →</a></p>
+    <p class="prose">A mesa não substitui o <a href="colaborar.html">cadastro editorial</a>. Senha da redação: a combinada na sala. Não é a senha do e-mail nem do GitHub.</p>
+
+    <form class="cadastro" id="mesa-login">
+      <div class="field">
+        <label for="login_assinatura">Nome de assinatura</label>
+        <input id="login_assinatura" name="login_assinatura" type="text" required autocomplete="nickname">
+        <span class="hint">O byline. O mesmo do cadastro.</span>
+      </div>
+      <div class="field">
+        <label for="login_senha">Senha da redação</label>
+        <input id="login_senha" name="login_senha" type="password" required autocomplete="off">
+      </div>
+      <button type="submit" id="entrar">Entrar na mesa</button>
+      <p class="form-status" id="login-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <div id="mesa-editor" hidden>
+      <p class="mesa-sessao">Assinando como <strong id="mesa-byline"></strong> · <button type="button" class="linkish" id="sair">Sair</button></p>
+      <form class="cadastro" id="mesa-peca">
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="field">
+          <label for="tipo">O que é</label>
+          <select id="tipo" name="tipo" required>
+            <option value="peca" selected>Peça de crítica</option>
+            <option value="indicacao">Indicação (vídeo ou podcast)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="title">Título</label>
+          <input id="title" name="title" type="text" required>
+        </div>
+        <div class="field">
+          <label for="deck">Deck</label>
+          <textarea id="deck" name="deck" rows="3" required placeholder="O parágrafo curto abaixo do título."></textarea>
+        </div>
+        <div class="field">
+          <label for="equipe">Equipe</label>
+          <select id="equipe" name="equipe" required>
+            <option value="" selected disabled>Região do cadastro</option>
+            <option>Redação</option>
+            <option>América do Sul</option>
+            <option>América do Norte</option>
+            <option>Europa</option>
+            <option>África</option>
+            <option>Ásia</option>
+            <option>Oceania</option>
+          </select>
+        </div>
+        <div class="field" id="campo-youtube" hidden>
+          <label for="youtube">ID do YouTube (se houver)</label>
+          <input id="youtube" name="youtube" type="text" placeholder="AEF-mIBtOkI">
+          <span class="hint">Só o código do vídeo, não o endereço inteiro.</span>
+        </div>
+        <div class="field">
+          <label for="body">Texto</label>
+          <textarea id="body" name="body" rows="14" required placeholder="A peça. Parágrafos separados por linha em branco."></textarea>
+        </div>
+        <div class="mesa-acoes">
+          <button type="submit" id="enviar-peca">Enviar à redação</button>
+          <button type="button" class="ghost" id="baixar-md">Baixar o markdown</button>
+        </div>
+        <p class="form-status" id="peca-status" role="status" aria-live="polite"></p>
+      </form>
     </div>
     </main>
   </div>
@@ -102,5 +151,6 @@
     </div>
   </footer>
   <script src="js/site.js"></script>
+  <script src="js/mesa.js"></script>
 </body>
 </html>
