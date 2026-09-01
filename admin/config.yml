@@ -117,3 +117,30 @@ collections:
       - { label: Resumo na listagem, name: resumo, widget: text, required: false }
       - { label: Seção da navegação, name: nav, widget: hidden, default: sala }
       - { label: Texto, name: body, widget: markdown }
+
+  - name: redacao
+    label: Cadastro da redação
+    files:
+      - name: colaboradores
+        label: Colaboradores
+        file: redacao/colaboradores.json
+        format: json
+        fields:
+          - { label: Atualizado, name: atualizado, widget: string }
+          - { label: Nota, name: nota, widget: text }
+          - name: editor
+            label: Editor
+            widget: object
+            fields:
+              - { label: Byline, name: byline, widget: string }
+              - { label: Papel, name: papel, widget: string }
+          - name: colaboradores
+            label: Colaboradores
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: string }
+              - { label: Nome, name: nome, widget: string }
+              - { label: Byline, name: byline, widget: string }
+              - { label: Equipe, name: equipe, widget: string, required: false }
+              - { label: Ofícios, name: oficios, widget: list, required: false }
+              - { label: Ativo na mesa, name: ativo, widget: boolean, default: true }

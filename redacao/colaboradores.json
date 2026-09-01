@@ -1,0 +1,29 @@
+{
+  "atualizado": "2026-08-31",
+  "nota": "Cadastro público da redação. Sem e-mail, WhatsApp ou matrícula. A mesa só abre para byline ativo + senha da redação.",
+  "editor": {
+    "byline": "Orlando Lopes",
+    "papel": "Editor responsável"
+  },
+  "colaboradores": [
+    { "id": "amanda-santiago-moreira", "nome": "Amanda Santiago Moreira", "byline": "Amanda Santiago Moreira", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "ana-carolina-vieira-escudini", "nome": "Ana Carolina Vieira Escudini", "byline": "Ana Carolina Vieira Escudini", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "ana-clara-daher-carneiro-ferraz", "nome": "Ana Clara Daher Carneiro Ferraz", "byline": "Ana Clara Daher Carneiro Ferraz", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "ana-livia-carvalho-costa", "nome": "Ana Lívia Carvalho Costa", "byline": "Ana Lívia Carvalho Costa", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "ana-luiza-zampirolli", "nome": "Ana Luiza Zampirolli", "byline": "Ana Luiza Zampirolli", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "jennyfer-vitoria-martinelli-sales", "nome": "Jennyfer Vitória Martinelli Sales", "byline": "Jennyfer Vitória Martinelli Sales", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "joao-pedro-campanharo-lacerda", "nome": "João Pedro Campanharo Lacerda", "byline": "João Pedro Campanharo Lacerda", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "joao-victor-batista-cunha", "nome": "João Victor Batista Cunha", "byline": "João Victor Batista Cunha", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "julia-facini-lima", "nome": "Júlia Facini Lima", "byline": "Júlia Facini Lima", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "kezia-de-souza-menezes", "nome": "Kezia de Souza Menezes", "byline": "Kezia de Souza Menezes", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "leadyne-coelho-lopes", "nome": "Leadyne Coelho Lopes", "byline": "Leadyne Coelho Lopes", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "liandra-guariz-piumbini", "nome": "Liandra Guariz Piumbini", "byline": "Liandra Guariz Piumbini", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "maria-clara-fortuna-francischeto", "nome": "Maria Clara Fortuna Francischeto", "byline": "Maria Clara Fortuna Francischeto", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "marina-maia-costa", "nome": "Marina Maia Costa", "byline": "Marina Maia Costa", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "pedro-alves-neto", "nome": "Pedro Alves Neto", "byline": "Pedro Alves Neto", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "pedro-arthur-oliveira-effgem-miranda", "nome": "Pedro Arthur Oliveira Effgem Miranda", "byline": "Pedro Arthur Oliveira Effgem Miranda", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "sophia-da-penha-marques", "nome": "Sophia da Penha Marques", "byline": "Sophia da Penha Marques", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "victoria-oliveira-santos", "nome": "Victoria Oliveira Santos", "byline": "Victoria Oliveira Santos", "equipe": "", "oficios": [], "ativo": true },
+    { "id": "orlando-lopes", "nome": "Orlando Lopes", "byline": "Orlando Lopes", "equipe": "Redação", "oficios": ["Edição"], "ativo": true }
+  ]
+}

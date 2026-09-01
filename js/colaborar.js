@@ -43,6 +43,20 @@
       lgpd: form.lgpd.checked ? "sim" : "nao",
     };
 
+    try {
+      localStorage.setItem(
+        "revista-ficha",
+        JSON.stringify({
+          byline: payload.nome_assinatura,
+          equipe: payload.equipe_regional,
+          oficios: payload.oficios,
+          em: Date.now(),
+        })
+      );
+    } catch (err) {
+      /* ficha local é um extra; o e-mail segue */
+    }
+
     submit.disabled = true;
     setStatus("wait", "Enviando o cadastro…");
 

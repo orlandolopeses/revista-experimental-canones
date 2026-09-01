@@ -47,10 +47,16 @@
     <header class="page-intro">
       <p class="eyebrow">Redação</p>
       <h1 class="page-title">Mesa da redação</h1>
-      <p class="deck">Quem já fez o cadastro escreve aqui. O rascunho fica neste navegador. Enviar não é publicar: o editor lê, e só então a peça entra no ar.</p>
+      <p class="deck">Cadastro da redação, rascunhos neste navegador, imagem e vídeo na peça. Enviar não é publicar: o editor lê, e só então o texto entra no ar.</p>
     </header>
 
-    <p class="prose">A mesa não substitui o <a href="colaborar.html">cadastro editorial</a>. Senha da redação: a combinada na sala. Não é a senha do e-mail nem do GitHub.</p>
+    <p class="prose">A mesa só abre para quem está no cadastro da redação — o mesmo nome de assinatura da <a href="colaborar.html">ficha editorial</a> — e a senha combinada na sala. Sem e-mail, sem GitHub, sem matrícula nesta tela.</p>
+
+    <section class="ficha-redacao" aria-labelledby="ficha-titulo">
+      <h2 id="ficha-titulo">Colaboradores</h2>
+      <p class="expediente-note">Byline ativo na edição zero. Equipe e ofício entram pela ficha. Quem ainda não cadastrou faz isso antes da primeira peça.</p>
+      <ul class="redacao" id="lista-colaboradores"></ul>
+    </section>
 
     <form class="cadastro" id="mesa-login">
       <div class="field">
@@ -67,7 +73,14 @@
     </form>
 
     <div id="mesa-editor" hidden>
-      <p class="mesa-sessao">Assinando como <strong id="mesa-byline"></strong> · <button type="button" class="linkish" id="sair">Sair</button></p>
+      <p class="mesa-sessao">Assinando como <strong id="mesa-byline"></strong> · <span id="mesa-meta"></span> · <button type="button" class="linkish" id="sair">Sair</button></p>
+      <div class="estudio">
+        <aside class="estudio-rail">
+          <p class="footer-label">Rascunhos</p>
+          <button type="button" class="ghost" id="novo-rascunho">Nova peça</button>
+          <ul class="rascunho-lista" id="lista-rascunhos"></ul>
+        </aside>
+        <div class="estudio-main">
       <form class="cadastro" id="mesa-peca">
         <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="field">
@@ -98,21 +111,34 @@
             <option>Oceania</option>
           </select>
         </div>
-        <div class="field" id="campo-youtube" hidden>
-          <label for="youtube">ID do YouTube (se houver)</label>
-          <input id="youtube" name="youtube" type="text" placeholder="AEF-mIBtOkI">
-          <span class="hint">Só o código do vídeo, não o endereço inteiro.</span>
-        </div>
         <div class="field">
           <label for="body">Texto</label>
-          <textarea id="body" name="body" rows="14" required placeholder="A peça. Parágrafos separados por linha em branco."></textarea>
+          <div class="mesa-toolbar">
+            <button type="button" class="ghost" id="inserir-imagem">Inserir imagem</button>
+            <button type="button" class="ghost" id="inserir-video">Inserir vídeo</button>
+          </div>
+          <input id="arquivo-imagem" type="file" accept="image/jpeg,image/png,image/webp,image/gif" hidden>
+          <textarea id="body" name="body" rows="16" required placeholder="A peça. Parágrafos separados por linha em branco. Imagem e vídeo entram pelos botões acima."></textarea>
+        </div>
+        <div class="field" id="campo-video">
+          <label for="youtube">Vídeo (YouTube)</label>
+          <input id="youtube" name="youtube" type="text" placeholder="https://youtu.be/… ou o ID">
+          <span class="hint">Cole o endereço. A mesa extrai o código e mostra o original embutido, sem hospedar o arquivo.</span>
+          <div class="video-preview" id="video-preview" hidden></div>
+        </div>
+        <div class="field" id="campo-imagens">
+          <p class="footer-label">Imagens deste rascunho</p>
+          <ul class="midia-lista" id="lista-imagens"></ul>
         </div>
         <div class="mesa-acoes">
+          <button type="button" class="ghost" id="salvar-rascunho">Salvar rascunho</button>
           <button type="submit" id="enviar-peca">Enviar à redação</button>
           <button type="button" class="ghost" id="baixar-md">Baixar o markdown</button>
         </div>
         <p class="form-status" id="peca-status" role="status" aria-live="polite"></p>
       </form>
+        </div>
+      </div>
     </div>
     </main>
   </div>

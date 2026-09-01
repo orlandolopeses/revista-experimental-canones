@@ -256,7 +256,21 @@ def render_markdown(body: str) -> str:
     if stripped.startswith("<") and not stripped.startswith("<http"):
         return stripped
     MD.reset()
-    return add_external_rel(MD.convert(stripped))
+    html_body = add_external_rel(MD.convert(stripped))
+    return embed_inline_videos(html_body)
+
+
+YOUTUBE_P = re.compile(
+    r'<p><a href="https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtu\.be/)([A-Za-z0-9_-]{11})(?:[^"]*)"[^>]*>.*?</a></p>',
+    re.I,
+)
+
+
+def embed_inline_videos(body_html: str) -> str:
+    def repl(match: re.Match[str]) -> str:
+        return video_block({"youtube": match.group(1), "title": "Vídeo"})
+
+    return YOUTUBE_P.sub(repl, body_html)
 
 
 def add_external_rel(text: str) -> str:
