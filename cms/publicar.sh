@@ -43,12 +43,8 @@ if git -C "$PAGES" diff --cached --quiet; then
   exit 0
 fi
 
+MSG="${REVISTA_COMMIT_MSG:-feat(revista): atualiza o site publicado}"
 git -C "$PAGES" -c user.email="orlandolopes.es@gmail.com" -c user.name="Orlando Lopes" \
-  commit -m "$(cat <<'EOF'
-feat(revista): mesa da redação para colaboradores
-
-Alunos editam markdown na mesa (Sveltia); o HTML só entra no ar depois do editor aceitar.
-EOF
-)"
+  commit -m "$MSG"
 git -C "$PAGES" push origin main
 echo "publicado: https://orlandolopeses.github.io/revista-experimental-canones/"

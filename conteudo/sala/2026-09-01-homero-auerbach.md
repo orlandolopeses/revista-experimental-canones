@@ -1,10 +1,10 @@
 ---
 title: "A cicatriz e o anteprojeto"
-eyebrow: "Próxima aula · 01 de setembro de 2026"
+eyebrow: "Nesta manhã · 01 de setembro de 2026"
 deck: "Aula 3. Sala 105 do IC, 7h30–11h. Duas tarefas na mesma manhã: o primeiro caso de longa duração (Homero + Auerbach) e as falas de sete minutos dos grupos."
 byline: "Redação da turma · Cânones da crítica internacional"
 date: 2026-09-01
-kicker: "Próxima · Aula 3"
+kicker: "Hoje · Aula 3"
 resumo: "Laboratório pontuado: Homero (Odisseia XIX) + Auerbach, e as falas de sete minutos. 08/09 é feriado em Vitória."
 nav: sala
 ---

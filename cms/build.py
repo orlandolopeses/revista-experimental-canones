@@ -75,9 +75,9 @@ LISTAGENS: dict[str, dict[str, str]] = {
             '<p class="prose">O <a href="https://docs.google.com/document/d/'
             "1I5Ybu2rNf_n_gFVQfd7LbW5SNqcljrD9nsHUGacFt9o/edit\" "
             'rel="noopener noreferrer">plano de curso</a> permanece vivo. '
-            "Briefing do próximo encontro: "
+            "Nesta manhã: "
             '<a href="2026-09-01-homero-auerbach.html">A cicatriz e o anteprojeto</a>. '
-            "08/09 é feriado em Vitória.</p>\n"
+            "08/09 é feriado em Vitória; o encontro seguinte é 15/09.</p>\n"
         ),
     },
     "indicacoes": {
