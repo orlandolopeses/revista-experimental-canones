@@ -6,6 +6,8 @@ backend:
   branch: main
   squash_merges: true
   cms_label_prefix: sveltia-cms/
+  auth_methods:
+    - token
 
 publish_mode: editorial_workflow
 
