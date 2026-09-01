@@ -14,7 +14,7 @@ display_url: https://orlandolopeses.github.io/revista-experimental-canones
 locale: pt
 
 media_folder: img/uploads
-public_folder: ../img/uploads
+public_folder: /revista-experimental-canones/img/uploads
 
 slug:
   encoding: ascii
