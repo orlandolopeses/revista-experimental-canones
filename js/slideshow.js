@@ -25,6 +25,17 @@
     return parts[2] + "/" + parts[1] + "/" + parts[0];
   }
 
+  function shortTitle(item) {
+    var raw = (item.titulo || "").replace(/\s+/g, " ").trim();
+    if (!raw || raw === item.kicker) {
+      raw = (item.trecho || "").replace(/\s+/g, " ").trim();
+    }
+    if (raw.length > 58) {
+      raw = raw.slice(0, 55).replace(/\s+\S*$/, "") + "…";
+    }
+    return raw || item.kicker || "Recorte";
+  }
+
   function pad(n, total) {
     var width = String(total).length;
     var s = String(n);
@@ -88,11 +99,18 @@
       archive.href = "pecas/arquivo.html";
       archive.textContent = "Ver os 34 recortes no arquivo";
 
+      var topics = el("aside", "slideshow-topics");
+      topics.setAttribute("aria-label", "Outros tópicos da coleção Crítica");
+      topics.appendChild(el("p", "eyebrow", "Outros tópicos"));
+      var topicsList = document.createElement("ul");
+      topics.appendChild(topicsList);
+
       copy.appendChild(eyebrow);
       copy.appendChild(title);
       copy.appendChild(trecho);
       copy.appendChild(controls);
       copy.appendChild(archive);
+      copy.appendChild(topics);
       copy.appendChild(live);
 
       root.replaceChildren();
@@ -113,9 +131,36 @@
         trecho.textContent = item.trecho || "";
         counter.textContent = pad(index + 1, itens.length) + " / " + itens.length;
         live.textContent = titleLink.textContent + ". " + (item.kicker || "");
+        renderTopics();
         var ahead = itens[(index + 1) % itens.length];
         var preload = new Image();
         preload.src = coverUrl(ahead);
+      }
+
+      function renderTopics() {
+        var take = Math.min(6, Math.max(0, itens.length - 1));
+        topicsList.replaceChildren();
+        var offset;
+        for (offset = 1; offset <= take; offset += 1) {
+          var n = (index + offset) % itens.length;
+          var other = itens[n];
+          var li = document.createElement("li");
+          var btn = document.createElement("button");
+          btn.type = "button";
+          btn.appendChild(document.createTextNode(shortTitle(other)));
+          if (other.kicker) {
+            btn.appendChild(el("span", "meta", other.kicker));
+          }
+          btn.addEventListener("click", function (target) {
+            return function () {
+              show(target);
+              start();
+            };
+          }(n));
+          li.appendChild(btn);
+          topicsList.appendChild(li);
+        }
+        topics.hidden = take === 0;
       }
 
       function stop() {

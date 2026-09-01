@@ -372,7 +372,7 @@ nav.sections.is-stuck {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(240px, 0.85fr);
   gap: 2.2rem 2.6rem;
-  align-items: start;
+  align-items: stretch;
   outline: none;
 }
 
@@ -396,6 +396,9 @@ nav.sections.is-stuck {
 
 .slideshow-copy {
   padding-top: 0.15rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .slideshow-copy h2 {
@@ -462,9 +465,70 @@ nav.sections.is-stuck {
 }
 
 .slideshow-more {
+  display: inline-block;
+  margin: 0 0 1.15rem;
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.02em;
+}
+
+.slideshow-topics {
+  margin-top: auto;
+  padding: 0.9rem 1rem 0.85rem;
+  border: 1px solid var(--ink);
+  background: var(--paper-deep);
+}
+
+.slideshow-topics .eyebrow {
+  margin: 0 0 0.45rem;
+  color: var(--ink);
+}
+
+.slideshow-topics ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow-topics li {
+  border-top: 1px solid var(--hair);
+}
+
+.slideshow-topics li:first-child {
+  border-top: 0;
+}
+
+.slideshow-topics button {
+  appearance: none;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0.55rem 0 0.58rem;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -0.015em;
+  text-align: left;
+  cursor: pointer;
+}
+
+.slideshow-topics button:hover {
+  color: var(--accent-ink);
+}
+
+.slideshow-topics .meta {
+  display: block;
+  margin-top: 0.18rem;
+  font-family: var(--sans);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 .visually-hidden {
@@ -1514,5 +1578,9 @@ footer.site {
   .hero-copy {
     margin: -2.2rem 0.8rem 0 0;
     padding-top: 1.1rem;
+  }
+
+  .slideshow-topics {
+    margin-top: 1.5rem;
   }
 }
