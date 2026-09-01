@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: orlandolopeses/revista-experimental-canones
+  branch: main
+  squash_merges: true
+  cms_label_prefix: sveltia-cms/
+
+publish_mode: editorial_workflow
+
+site_url: https://orlandolopeses.github.io/revista-experimental-canones
+display_url: https://orlandolopeses.github.io/revista-experimental-canones
+locale: pt
+
+media_folder: img/uploads
+public_folder: ../img/uploads
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: pecas
+    label: Peças de crítica
+    label_singular: Peça
+    folder: conteudo/pecas
+    create: true
+    delete: false
+    extension: md
+    format: yaml-frontmatter
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    preview_path: pecas/{{slug}}.html
+    summary: "{{title}} — {{byline}}"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Olho (eyebrow), name: eyebrow, widget: string, hint: "Ex.: Crítica · edição zero" }
+      - { label: Deck, name: deck, widget: text, hint: "O parágrafo curto abaixo do título." }
+      - { label: Byline, name: byline, widget: string, hint: "Nome de assinatura, como no cadastro." }
+      - { label: Data, name: date, widget: datetime, time_format: false, date_format: yyyy-MM-dd }
+      - label: Equipe
+        name: equipe
+        widget: select
+        options:
+          - Redação
+          - América do Sul
+          - América do Norte
+          - Europa
+          - África
+          - Ásia
+          - Oceania
+      - { label: Kicker na listagem, name: kicker, widget: string, required: false }
+      - { label: Resumo na listagem, name: resumo, widget: text, required: false }
+      - { label: Seção da navegação, name: nav, widget: hidden, default: critica }
+      - { label: Ordem na listagem, name: ordem, widget: hidden, default: 99 }
+      - { label: Texto, name: body, widget: markdown }
+
+  - name: indicacoes
+    label: Indicações
+    label_singular: Indicação
+    folder: conteudo/indicacoes
+    create: true
+    delete: false
+    extension: md
+    format: yaml-frontmatter
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    preview_path: indicacoes/{{slug}}.html
+    summary: "{{title}}"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Olho (eyebrow), name: eyebrow, widget: string, hint: "Ex.: Indicação · 28/08/2026" }
+      - { label: Deck, name: deck, widget: text }
+      - { label: Byline, name: byline, widget: string }
+      - { label: Data, name: date, widget: datetime, time_format: false, date_format: yyyy-MM-dd }
+      - label: Equipe
+        name: equipe
+        widget: select
+        required: false
+        options:
+          - Redação
+          - América do Sul
+          - América do Norte
+          - Europa
+          - África
+          - Ásia
+          - Oceania
+      - { label: Kicker na listagem, name: kicker, widget: string, required: false }
+      - { label: Resumo na listagem, name: resumo, widget: text, required: false }
+      - { label: ID do YouTube, name: youtube, widget: string, required: false, hint: "Só o código, ex.: AEF-mIBtOkI. Deixe vazio se for podcast ou texto." }
+      - { label: Título do vídeo, name: youtube_title, widget: string, required: false }
+      - { label: Crédito do vídeo, name: video_credit, widget: string, required: false }
+      - { label: URL original, name: origem, widget: string, required: false }
+      - { label: Seção da navegação, name: nav, widget: hidden, default: videos }
+      - { label: Texto, name: body, widget: markdown }
+
+  - name: sala
+    label: Notas de sala
+    label_singular: Nota de sala
+    folder: conteudo/sala
+    create: true
+    delete: false
+    extension: md
+    format: yaml-frontmatter
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    preview_path: sala/{{slug}}.html
+    summary: "{{title}}"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Olho (eyebrow), name: eyebrow, widget: string }
+      - { label: Deck, name: deck, widget: text }
+      - { label: Byline, name: byline, widget: string, default: "Redação da turma · Cânones da crítica internacional" }
+      - { label: Data, name: date, widget: datetime, time_format: false, date_format: yyyy-MM-dd }
+      - { label: Kicker na listagem, name: kicker, widget: string, required: false }
+      - { label: Resumo na listagem, name: resumo, widget: text, required: false }
+      - { label: Seção da navegação, name: nav, widget: hidden, default: sala }
+      - { label: Texto, name: body, widget: markdown }

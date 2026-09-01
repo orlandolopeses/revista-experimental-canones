@@ -1,0 +1,404 @@
+#!/usr/bin/env python3
+"""Gera HTML da revista a partir de markdown em conteudo/."""
+
+from __future__ import annotations
+
+import argparse
+import html
+import re
+import sys
+from datetime import date
+from pathlib import Path
+from typing import Any
+
+import markdown
+import yaml
+
+CMS_DIR = Path(__file__).resolve().parent
+ROOT = CMS_DIR.parent
+MESES = (
+    "",
+    "janeiro",
+    "fevereiro",
+    "março",
+    "abril",
+    "maio",
+    "junho",
+    "julho",
+    "agosto",
+    "setembro",
+    "outubro",
+    "novembro",
+    "dezembro",
+)
+
+SECOES = (
+    ("edicao", "Edição zero", "index.html"),
+    ("critica", "Crítica", "pecas/index.html"),
+    ("sala", "Sala", "sala/index.html"),
+    ("equipes", "Equipes", "equipes.html"),
+    ("radar", "Radar", "radar/index.html"),
+    ("videos", "Vídeos", "videos/index.html"),
+    ("podcasts", "Podcasts", "podcasts/index.html"),
+    ("colaborar", "Colaborar", "colaborar.html"),
+    ("expediente", "Expediente", "expediente.html"),
+)
+
+LISTAGENS: dict[str, dict[str, str]] = {
+    "pecas": {
+        "eyebrow": "Crítica",
+        "title": "Peças",
+        "deck": (
+            "O gesto em público. Cada texto é instrumento de leitura e, ao mesmo "
+            "tempo, objeto histórico — candidato, também ele, a cânone."
+        ),
+        "description": "Peças de crítica da Revista Experimental de Crítica Literária.",
+        "nav": "critica",
+        "before": "",
+        "after": (
+            '<p class="prose">Quem escreve entra pela '
+            '<a href="../redacao.html">mesa da redação</a>. '
+            "O texto só vai ao ar depois do editor responsável aceitar.</p>\n"
+        ),
+    },
+    "sala": {
+        "eyebrow": "Diário da disciplina",
+        "title": "Notas de sala",
+        "deck": (
+            "O que a turma já fez em público. Não é ata. Cada nota registra o "
+            "gesto da manhã — e o que fica para a redação."
+        ),
+        "description": "Notas de sala da optativa Cânones da crítica internacional.",
+        "nav": "sala",
+        "before": "",
+        "after": (
+            '<p class="prose">O <a href="https://docs.google.com/document/d/'
+            "1I5Ybu2rNf_n_gFVQfd7LbW5SNqcljrD9nsHUGacFt9o/edit\" "
+            'rel="noopener noreferrer">plano de curso</a> permanece vivo. '
+            "Briefing do próximo encontro: "
+            '<a href="2026-09-01-homero-auerbach.html">A cicatriz e o anteprojeto</a>. '
+            "08/09 é feriado em Vitória.</p>\n"
+        ),
+    },
+    "indicacoes": {
+        "eyebrow": "Redação",
+        "title": "Indicações",
+        "deck": (
+            "Duas mesas. Uma vê; a outra ouve. Não são canais da revista: cada "
+            "nota aponta um sinal fora da página e diz por que a crítica "
+            "internacional precisa dele agora."
+        ),
+        "description": "Indicações da Revista Experimental de Crítica Literária.",
+        "nav": "videos",
+        "before": """<div class="galeria-hub">
+      <a href="../videos/index.html">
+        <p class="eyebrow">Tela</p>
+        <h2>Galeria de vídeos</h2>
+        <p>Atila Iamarino e Miguel Nicolelis. A glosa é da redação; o original continua no YouTube.</p>
+      </a>
+      <a href="../podcasts/index.html">
+        <p class="eyebrow">Ouvido</p>
+        <h2>Galeria de podcasts</h2>
+        <p>Episódios do 451 MHz em que a crítica literária é o objeto — o veículo-modelo, no ouvido.</p>
+      </a>
+    </div>
+    <p class="section-label">Na mesa</p>
+""",
+        "after": "",
+    },
+}
+
+MD = markdown.Markdown(extensions=["extra", "sane_lists", "smarty"])
+
+
+def site_dir() -> Path:
+    if (ROOT / "site" / "conteudo").is_dir():
+        return ROOT / "site"
+    return ROOT
+
+
+def split_front_matter(text: str) -> tuple[dict[str, Any], str]:
+    text = text.lstrip("\ufeff")
+    if not text.startswith("---"):
+        return {}, text
+    match = re.match(r"^---\s*\n(.*?)\n---\s*\n?(.*)$", text, re.DOTALL)
+    if not match:
+        return {}, text
+    meta = yaml.safe_load(match.group(1)) or {}
+    if not isinstance(meta, dict):
+        raise ValueError("front matter precisa ser um mapa YAML")
+    return meta, match.group(2)
+
+
+def data_iso(value: Any) -> str:
+    if isinstance(value, date):
+        return value.isoformat()
+    if value is None:
+        return ""
+    text = str(value).strip()
+    return text[:10] if re.match(r"\d{4}-\d{2}-\d{2}", text) else text
+
+
+def data_curta(iso: str) -> str:
+    if not re.match(r"\d{4}-\d{2}-\d{2}", iso or ""):
+        return iso or ""
+    _year, month, day = iso.split("-")[:3]
+    return f"{int(day):02d} de {MESES[int(month)]}"
+
+
+def data_longa(iso: str) -> str:
+    curta = data_curta(iso)
+    if not re.match(r"\d{4}-\d{2}-\d{2}", iso or ""):
+        return curta
+    return f"{curta} de {iso[:4]}"
+
+
+def prefix_for(out_path: Path, site: Path) -> str:
+    depth = len(out_path.parent.relative_to(site).parts)
+    if depth <= 0:
+        return ""
+    return "../" * depth
+
+
+def nav_html(prefix: str, current: str) -> str:
+    links = []
+    for key, label, href in SECOES:
+        current_attr = ' aria-current="page"' if key == current else ""
+        links.append(f'<a href="{prefix}{href}"{current_attr}>{label}</a>')
+    return "\n      ".join(links)
+
+
+def footer_nav_html(prefix: str) -> str:
+    links = [f'<a href="{prefix}{href}">{label}</a>' for _, label, href in SECOES]
+    return "\n          ".join(links)
+
+
+def chrome(title: str, description: str, prefix: str, current: str, main: str) -> str:
+    title_esc = html.escape(title)
+    desc_esc = html.escape(description)
+    return f"""<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{desc_esc}">
+  <title>{title_esc} — Revista Experimental de Crítica Literária</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{prefix}css/site.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir ao conteúdo</a>
+  <div class="wrap">
+    <header class="site-head">
+      <div class="kicker-bar">
+        <a class="kicker-logo" href="https://www.ufes.br/" rel="noopener noreferrer">
+          <img src="{prefix}img/marca-ufes-header.svg" alt="UFES — Universidade Federal do Espírito Santo" width="104" height="57">
+        </a>
+        <p class="kicker-text">
+          <span class="kicker-title">Cânones da crítica internacional</span>
+          <span class="kicker-meta">UFES · Departamento de Letras · T01 · 2026/2</span>
+        </p>
+      </div>
+      <div class="masthead">
+        <div class="masthead-brand">
+          <a class="wordmark" href="{prefix}index.html">Revista Experimental <span>de Crítica Literária</span></a>
+          <p class="tagline">{{ a revista da turma }}</p>
+        </div>
+        <p class="masthead-issue"><strong>00</strong><span>Edição zero · agosto de 2026</span></p>
+      </div>
+      <nav class="sections" aria-label="Seções">
+      {nav_html(prefix, current)}
+      </nav>
+    </header>
+    <main id="conteudo">
+
+{main}
+    </main>
+  </div>
+  <footer class="site">
+    <div class="wrap footer-inner">
+      <div class="footer-col">
+        <p class="footer-wordmark">Revista Experimental de Crítica Literária</p>
+        <p>Órgão da optativa Cânones da crítica internacional. Universidade Federal do Espírito Santo · Departamento de Letras.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label">Seções</p>
+        <nav aria-label="Rodapé">
+          {footer_nav_html(prefix)}
+        </nav>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label">Redação</p>
+        <div class="footer-links">
+          <a href="{prefix}colaborar.html">Cadastro editorial</a>
+          <a href="{prefix}redacao.html">Mesa da redação</a>
+          <a href="https://docs.google.com/document/d/1I5Ybu2rNf_n_gFVQfd7LbW5SNqcljrD9nsHUGacFt9o/edit" rel="noopener noreferrer">Plano de curso</a>
+          <a href="mailto:orlando.albertino@ufes.br">orlando.albertino@ufes.br</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <p class="footer-legal">UFES · DLL · T01 · 2026/2 · Vitória, ES · © <span id="ano">2026</span></p>
+    </div>
+  </footer>
+  <script src="{prefix}js/site.js"></script>
+</body>
+</html>
+"""
+
+
+def render_markdown(body: str) -> str:
+    stripped = body.strip()
+    if not stripped:
+        return ""
+    if stripped.startswith("<") and not stripped.startswith("<http"):
+        return stripped
+    MD.reset()
+    return add_external_rel(MD.convert(stripped))
+
+
+def add_external_rel(text: str) -> str:
+    def _rel(match: re.Match[str]) -> str:
+        tag = match.group(0)
+        if "rel=" in tag:
+            return tag
+        return tag[:-1] + ' rel="noopener noreferrer">'
+
+    return re.sub(r'<a href="https?://[^"]+"[^>]*>', _rel, text)
+
+
+def video_block(meta: dict[str, Any]) -> str:
+    video_id = str(meta.get("youtube") or "").strip()
+    if not video_id:
+        return ""
+    title = html.escape(str(meta.get("youtube_title") or meta.get("title") or "Vídeo"))
+    credit = html.escape(str(meta.get("video_credit") or ""))
+    origin = html.escape(str(meta.get("origem") or f"https://youtu.be/{video_id}"), quote=True)
+    credit_html = f'\n      <p class="video-credit">{credit}</p>' if credit else ""
+    return f"""      <figure class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/{html.escape(video_id, quote=True)}" title="{title}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </figure>{credit_html}
+"""
+
+
+def inject_video(body_html: str, meta: dict[str, Any]) -> str:
+    block = video_block(meta)
+    if not block or "youtube-nocookie.com/embed/" in body_html:
+        return body_html
+    parts = body_html.split("</p>", 1)
+    if len(parts) == 2:
+        return parts[0] + "</p>\n" + block + parts[1]
+    return block + body_html
+
+
+def load_entries(folder: Path) -> list[dict[str, Any]]:
+    entries: list[dict[str, Any]] = []
+    if not folder.is_dir():
+        return entries
+    for path in sorted(folder.glob("*.md")):
+        meta, body = split_front_matter(path.read_text(encoding="utf-8"))
+        meta = dict(meta)
+        meta["_path"] = path
+        meta["_slug"] = path.stem
+        meta["_body"] = body
+        meta["date"] = data_iso(meta.get("date"))
+        entries.append(meta)
+    entries.sort(key=lambda e: e["_slug"])
+    entries.sort(key=lambda e: int(e.get("ordem") or 99))
+    entries.sort(key=lambda e: e.get("date") or "", reverse=True)
+    return entries
+
+
+def piece_html(entry: dict[str, Any], prefix: str) -> str:
+    title = str(entry.get("title") or entry["_slug"])
+    eyebrow = str(entry.get("eyebrow") or "")
+    deck = str(entry.get("deck") or "")
+    byline = str(entry.get("byline") or "")
+    body_html = inject_video(render_markdown(entry["_body"]), entry)
+    main = f"""    <header class="piece-head">
+      <p class="eyebrow">{html.escape(eyebrow)}</p>
+      <h1>{html.escape(title)}</h1>
+      <p class="deck">{html.escape(deck)}</p>
+      <p class="byline">{html.escape(byline)}</p>
+    </header>
+
+    <div class="prose">
+{body_html}
+    </div>
+"""
+    description = str(entry.get("description") or deck or title)
+    nav = str(entry.get("nav") or "")
+    return chrome(title, description, prefix, nav, main)
+
+
+def listing_html(secao: str, entries: list[dict[str, Any]], prefix: str) -> str:
+    info = LISTAGENS[secao]
+    rows = []
+    for entry in entries:
+        slug = entry["_slug"]
+        iso = entry.get("date") or ""
+        kicker = str(entry.get("kicker") or entry.get("eyebrow") or "")
+        resumo = str(entry.get("resumo") or entry.get("deck") or "")
+        title = str(entry.get("title") or slug)
+        rows.append(
+            f"""      <article class="note-row">
+        <time datetime="{html.escape(iso)}">{html.escape(data_curta(iso))}</time>
+        <div>
+          <p class="note-kicker">{html.escape(kicker)}</p>
+          <h2><a href="{html.escape(slug)}.html">{html.escape(title)}</a></h2>
+          <p>{html.escape(resumo)}</p>
+        </div>
+      </article>"""
+        )
+    main = f"""    <header class="page-intro">
+      <p class="eyebrow">{html.escape(info["eyebrow"])}</p>
+      <h1 class="page-title">{html.escape(info["title"])}</h1>
+      <p class="deck">{html.escape(info["deck"])}</p>
+    </header>
+    {info.get("before") or ""}<div class="notes">
+{chr(10).join(rows)}
+    </div>
+    {info.get("after") or ""}"""
+    return chrome(info["title"], info["description"], prefix, info["nav"], main)
+
+
+def write(path: Path, text: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text, encoding="utf-8")
+
+
+def build(site: Path) -> int:
+    content = site / "conteudo"
+    n = 0
+    for secao in ("pecas", "sala", "indicacoes"):
+        entries = load_entries(content / secao)
+        dest = site / secao
+        dest.mkdir(parents=True, exist_ok=True)
+        for entry in entries:
+            out = dest / f"{entry['_slug']}.html"
+            write(out, piece_html(entry, prefix_for(out, site)))
+            n += 1
+        index = dest / "index.html"
+        write(index, listing_html(secao, entries, prefix_for(index, site)))
+        n += 1
+        print(f"{secao}: {len(entries)} peças + índice", file=sys.stderr)
+    return n
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Monta o HTML editorial da revista.")
+    parser.add_argument("--site", type=Path, default=None)
+    args = parser.parse_args()
+    site = args.site.resolve() if args.site else site_dir()
+    if not (site / "conteudo").is_dir():
+        print(f"não achei conteudo/ em {site}", file=sys.stderr)
+        return 1
+    n = build(site)
+    print(f"ok {n} arquivos em {site}", file=sys.stderr)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

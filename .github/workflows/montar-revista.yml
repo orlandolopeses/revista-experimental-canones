@@ -1,0 +1,34 @@
+name: Montar revista
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "conteudo/**"
+      - "cms/**"
+      - ".github/workflows/montar-revista.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  montar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dependências
+        run: pip install -r cms/requirements.txt
+      - name: Gerar HTML
+        run: python3 cms/build.py
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(revista): montar HTML a partir da mesa"
+          file_pattern: pecas/** sala/** indicacoes/**
+          commit_user_name: Revista Experimental
+          commit_user_email: orlando.albertino@ufes.br
