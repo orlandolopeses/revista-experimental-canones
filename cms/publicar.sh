@@ -32,7 +32,8 @@ rsync -a \
 
 # conteudo: copia sem apagar peças que só existem no Pages
 rsync -a "$SITE/conteudo/" "$PAGES/conteudo/"
-rsync -a --exclude '__pycache__/' --exclude '*.pyc' "$ROOT/cms/" "$PAGES/cms/"
+rsync -a --exclude '__pycache__/' --exclude '*.pyc' --exclude '.gitignore' "$ROOT/cms/" "$PAGES/cms/"
+printf '%s\n' '__pycache__/' '*.pyc' > "$PAGES/cms/.gitignore"
 mkdir -p "$PAGES/.github/workflows"
 cp "$ROOT/cms/github/montar-revista.yml" "$PAGES/.github/workflows/montar-revista.yml"
 touch "$PAGES/.nojekyll"

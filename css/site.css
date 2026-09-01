@@ -358,6 +358,133 @@ nav.sections.is-stuck {
   line-height: 1.4;
 }
 
+.slideshow-band {
+  padding: 0 0 2.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.slideshow-band .section-label {
+  border-top: 0;
+  padding-top: 1.35rem;
+}
+
+.slideshow {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(240px, 0.85fr);
+  gap: 2.2rem 2.6rem;
+  align-items: start;
+  outline: none;
+}
+
+.slideshow-stage {
+  margin: 0;
+  background: var(--ink);
+}
+
+.slideshow-media {
+  display: block;
+  text-decoration: none;
+}
+
+.slideshow-media img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  filter: saturate(0.92) contrast(1.06);
+}
+
+.slideshow-copy {
+  padding-top: 0.15rem;
+}
+
+.slideshow-copy h2 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(1.55rem, 3.1vw, 2.15rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.75rem;
+  text-wrap: balance;
+}
+
+.slideshow-copy h2 a {
+  text-decoration: none;
+}
+
+.slideshow-copy h2 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.slideshow-trecho {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  line-height: 1.45;
+  margin: 0 0 1.25rem;
+}
+
+.slideshow-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin: 0 0 1.1rem;
+  border-top: 1px solid var(--hair);
+  padding-top: 0.85rem;
+}
+
+.slideshow-controls button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--ink);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.15rem 0 0.12rem;
+  cursor: pointer;
+}
+
+.slideshow-controls button:hover {
+  color: var(--accent-ink);
+  border-bottom-color: var(--accent);
+}
+
+.slideshow-count {
+  margin: 0 auto 0 0;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.slideshow-more {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slideshow-media img {
+    filter: none;
+  }
+}
+
 .video-frame {
   margin: 0 0 0.7rem;
   background: var(--ink);
@@ -1345,6 +1472,7 @@ footer.site {
   }
 
   .hero,
+  .slideshow,
   .grid-3,
   .teams,
   .redacao,
