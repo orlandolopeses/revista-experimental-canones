@@ -54,8 +54,16 @@ LISTAGENS: dict[str, dict[str, str]] = {
         ),
         "description": "Peças de crítica da Revista Experimental de Crítica Literária.",
         "nav": "critica",
-        "before": "",
+        "before": (
+            '<nav class="galeria-switch" aria-label="Mesas de crítica">\n'
+            '      <a href="index.html" aria-current="page">Peças</a>\n'
+            '      <a href="arquivo.html">Arquivo Instagram</a>\n'
+            "    </nav>\n"
+        ),
         "after": (
+            '<p class="prose">Arquivo da coleção Instagram <em>Crítica</em>: '
+            '<a href="arquivo.html">34 recortes, agosto de 2026</a>. '
+            "O original continua lá; aqui entra o recorte.</p>\n"
             '<p class="prose">Quem escreve entra pela '
             '<a href="../redacao.html">mesa da redação</a>. '
             "O texto só vai ao ar depois do editor responsável aceitar.</p>\n"

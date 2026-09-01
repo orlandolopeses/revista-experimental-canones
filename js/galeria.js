@@ -51,6 +51,39 @@
     return card;
   }
 
+  function renderInstagram(item) {
+    var card = el("article", "galeria-card is-instagram");
+    var media = document.createElement("a");
+    media.className = "galeria-media";
+    media.href = item.href;
+    media.rel = "noopener noreferrer";
+    media.target = "_blank";
+    media.setAttribute("aria-label", "Abrir o original de @" + (item.conta || "") + " no Instagram");
+    if (item.cover) {
+      var img = document.createElement("img");
+      img.src = item.cover;
+      img.alt = "";
+      img.width = 480;
+      img.height = 600;
+      img.loading = "lazy";
+      media.appendChild(img);
+    }
+    if (item.kind === "vídeo") media.appendChild(playMark());
+    card.appendChild(media);
+    var kicker = (item.kicker || "") + (item.data ? " · " + formatDate(item.data) : "");
+    card.appendChild(el("p", "eyebrow", kicker));
+    var h2 = el("h2");
+    var title = document.createElement("a");
+    title.href = item.href;
+    title.rel = "noopener noreferrer";
+    title.target = "_blank";
+    title.textContent = item.titulo;
+    h2.appendChild(title);
+    card.appendChild(h2);
+    if (item.trecho) card.appendChild(el("p", "", item.trecho));
+    return card;
+  }
+
   function renderPodcast(item) {
     var card = el("article", "galeria-card is-podcast");
     var media = document.createElement(item.href ? "a" : "div");
@@ -107,7 +140,9 @@
         return;
       }
       itens.forEach(function (item) {
-        root.appendChild(kind === "podcast" ? renderPodcast(item) : renderVideo(item));
+        if (kind === "podcast") root.appendChild(renderPodcast(item));
+        else if (kind === "instagram") root.appendChild(renderInstagram(item));
+        else root.appendChild(renderVideo(item));
       });
     })
     .catch(function () {
