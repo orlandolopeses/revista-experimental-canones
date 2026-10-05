@@ -15,7 +15,7 @@ Sveltia em `site/admin/` permanece para uso do editor, se quiser. A turma não p
 | `site/redacao.html` | Estúdio: login, rascunhos, imagem, vídeo. |
 | `cms/github/montar-revista.yml` | Action no repo Pages: gera HTML quando o markdown muda. |
 
-Radar, vídeos.json e podcasts.json **não** passam pela mesa. Cadastro continua em `colaborar.html` (FormSubmit). Matrícula não se publica.
+O Clipping (`clipping/colecao-critica.json`), `videos.json` e `podcasts.json` **não** passam pela mesa. Cadastro continua em `colaborar.html` (FormSubmit). Matrícula não se publica.
 
 ## Fluxo do aluno
 
