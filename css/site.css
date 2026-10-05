@@ -1068,6 +1068,51 @@ nav.sections.is-stuck {
   color: var(--muted);
 }
 
+.note-row .premio-pais {
+  margin: 0;
+  padding-top: 0.3rem;
+  font-family: var(--display);
+  font-size: 1rem;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.premio-situacao {
+  margin: 0.6rem 0 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.note-row p.premio-linha {
+  margin-top: 0.45rem;
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  color: var(--accent);
+}
+
+.premios-atalhos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  margin: 1.6rem 0 0;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.premios-atalhos a {
+  text-decoration: none;
+}
+
+.premios-atalhos a:hover {
+  color: var(--accent);
+}
+
 .note-kicker {
   font-size: 0.66rem;
   font-weight: 700;
@@ -1533,7 +1578,8 @@ footer.site {
     grid-template-columns: 1fr;
   }
 
-  .note-row time {
+  .note-row time,
+  .note-row .premio-pais {
     padding-top: 0;
   }
 
@@ -1558,9 +1604,9 @@ footer.site {
   nav.sections a {
     flex: 1 1 auto;
     text-align: center;
-    padding: 0.7rem 0.5rem;
-    font-size: 0.66rem;
-    letter-spacing: 0.06em;
+    padding: 0.7rem 0.32rem;
+    font-size: 0.64rem;
+    letter-spacing: 0.03em;
     margin-right: 0;
     border-right: 1px solid #3a3228;
   }

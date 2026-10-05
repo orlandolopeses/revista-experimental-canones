@@ -38,6 +38,7 @@ SECOES = (
     ("clipping", "Clipping", "clipping/index.html"),
     ("sala", "Sala", "sala/index.html"),
     ("indicacoes", "Indicações", "indicacoes/index.html"),
+    ("premios", "Prêmios", "premios/index.html"),
     ("equipes", "Equipes", "equipes.html"),
     ("colaborar", "Colaborar", "colaborar.html"),
     ("expediente", "Expediente", "expediente.html"),
@@ -350,20 +351,34 @@ def piece_html(entry: dict[str, Any], prefix: str) -> str:
     deck = str(entry.get("deck") or "")
     byline = str(entry.get("byline") or "")
     body_html = inject_video(render_markdown(entry["_body"]), entry)
+    situacao = str(entry.get("situacao") or "")
+    fonte = str(entry.get("fonte") or "")
+    ficha = ""
+    if situacao:
+        link = (
+            f' · <a href="{html.escape(fonte, quote=True)}" rel="noopener noreferrer">lista oficial</a>'
+            if fonte
+            else ""
+        )
+        ficha = f'\n      <p class="premio-situacao">{html.escape(situacao)}{link}</p>'
     main = f"""    <header class="piece-head">
       <p class="eyebrow">{html.escape(eyebrow)}</p>
       <h1>{html.escape(title)}</h1>
-      <p class="deck">{html.escape(deck)}</p>
-      <p class="byline">{html.escape(byline)}</p>
+      <p class="deck">{inline(deck)}</p>
+      <p class="byline">{html.escape(byline)}</p>{ficha}
     </header>
 
     <div class="prose">
 {body_html}
     </div>
 """
-    description = str(entry.get("description") or deck or title)
+    description = str(entry.get("description") or deck or title).replace("*", "")
     nav = str(entry.get("nav") or "")
     return chrome(title, description, prefix, nav, main)
+
+
+def inline(text: str) -> str:
+    return re.sub(r"\*([^*]+)\*", r"<em>\1</em>", html.escape(text))
 
 
 def note_row(entry: dict[str, Any], href: str) -> str:
@@ -376,7 +391,7 @@ def note_row(entry: dict[str, Any], href: str) -> str:
         <div>
           <p class="note-kicker">{html.escape(kicker)}</p>
           <h2><a href="{html.escape(href)}">{html.escape(title)}</a></h2>
-          <p>{html.escape(resumo)}</p>
+          <p>{inline(resumo)}</p>
         </div>
       </article>"""
 
@@ -394,6 +409,64 @@ def listing_html(secao: str, entries: list[dict[str, Any]], prefix: str) -> str:
     </div>
     {info.get("after") or ""}"""
     return chrome(info["title"], info["description"], prefix, info["nav"], main)
+
+
+def premios_html(entries: list[dict[str, Any]]) -> str:
+    atalhos = []
+    secoes = []
+    for slug, nome, _descricao in EQUIPES:
+        do_continente = sorted(
+            (e for e in entries if str(e.get("equipe") or "").strip() == nome),
+            key=lambda e: str(e.get("pais") or ""),
+        )
+        if not do_continente:
+            continue
+        atalhos.append(f'<a href="#{slug}">{html.escape(nome)}</a>')
+        linhas = []
+        for e in do_continente:
+            linhas.append(
+                f"""      <article class="note-row">
+        <p class="premio-pais">{html.escape(str(e.get("pais") or ""))}</p>
+        <div>
+          <h2><a href="{html.escape(e['_slug'])}.html">{html.escape(str(e.get("title") or e["_slug"]))}</a></h2>
+          <p>{inline(str(e.get("resumo") or e.get("deck") or ""))}</p>
+          <p class="premio-linha">{html.escape(str(e.get("situacao") or ""))}</p>
+        </div>
+      </article>"""
+            )
+        secoes.append(
+            f"""    <section class="continente" id="{slug}" aria-labelledby="{slug}-titulo">
+      <header class="continente-head">
+        <p class="eyebrow">Continente</p>
+        <h2 id="{slug}-titulo">{html.escape(nome)}</h2>
+      </header>
+      <div class="notes">
+{chr(10).join(linhas)}
+      </div>
+    </section>"""
+        )
+    main = f"""    <header class="page-intro">
+      <p class="eyebrow">Redação</p>
+      <h1 class="page-title">Prêmios</h1>
+      <p class="deck">Os finalistas de 2026 dos maiores prêmios literários de cada país, com uma nota da redação para cada obra. Um prêmio é uma máquina de cânone: decide o que entra na conversa antes de a crítica chegar.</p>
+    </header>
+
+    <div class="prose">
+      <p>As notas dizem o que cada obra propõe e o que júri e crítica destacaram, sempre com a fonte. Ninguém da turma leu ainda esses livros, e as notas não fingem leitura. Quando sai o vencedor, a página do prêmio é atualizada.</p>
+    </div>
+
+    <nav class="premios-atalhos" aria-label="Continentes">{" ".join(atalhos)}</nav>
+
+{chr(10).join(secoes)}
+    <p class="prose">Falta um país ou um prêmio? As <a href="../equipes.html">equipes</a> podem propor pela <a href="../redacao.html">mesa da redação</a>.</p>
+"""
+    return chrome(
+        "Prêmios",
+        "Finalistas 2026 dos maiores prêmios literários de cada país, comentados pela redação.",
+        "../",
+        "premios",
+        main,
+    )
 
 
 def equipes_html(publicadas: list[tuple[str, dict[str, Any]]]) -> str:
@@ -466,7 +539,7 @@ def build(site: Path) -> int:
     content = site / "conteudo"
     n = 0
     publicadas: list[tuple[str, dict[str, Any]]] = []
-    for secao in ("pecas", "sala", "indicacoes"):
+    for secao in ("pecas", "sala", "indicacoes", "premios"):
         entries = load_entries(content / secao)
         if secao != "sala":
             publicadas.extend((secao, e) for e in entries)
@@ -477,7 +550,10 @@ def build(site: Path) -> int:
             write(out, piece_html(entry, prefix_for(out, site)))
             n += 1
         index = dest / "index.html"
-        write(index, listing_html(secao, entries, prefix_for(index, site)))
+        if secao == "premios":
+            write(index, premios_html(entries))
+        else:
+            write(index, listing_html(secao, entries, prefix_for(index, site)))
         n += 1
         print(f"{secao}: {len(entries)} peças + índice", file=sys.stderr)
     publicadas.sort(key=lambda item: item[1].get("date") or "", reverse=True)
