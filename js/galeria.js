@@ -25,6 +25,24 @@
     return parts[2] + "/" + parts[1] + "/" + parts[0];
   }
 
+  var MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho",
+    "agosto", "setembro", "outubro", "novembro", "dezembro"];
+
+  function dataExtenso(iso) {
+    var parts = (iso || "").split("-");
+    if (parts.length !== 3) return iso || "";
+    return Number(parts[2]) + " de " + MESES[Number(parts[1]) - 1] + " de " + parts[0];
+  }
+
+  function resumoClipping(data, itens) {
+    var alvo = document.querySelector("[data-galeria-resumo]");
+    if (!alvo || !itens.length) return;
+    var datas = itens.map(function (item) { return item.data; }).filter(Boolean).sort();
+    var texto = itens.length + " recortes, de " + dataExtenso(datas[0]) + " a " + dataExtenso(datas[datas.length - 1]) + ".";
+    if (data.recuperado) texto += " Coleção conferida em " + formatDate(data.recuperado) + ".";
+    alvo.textContent = texto;
+  }
+
   function renderVideo(item) {
     var card = el("article", "galeria-card");
     var media = document.createElement("a");
@@ -135,6 +153,7 @@
     .then(function (data) {
       var itens = data.itens || [];
       root.replaceChildren();
+      if (kind === "instagram") resumoClipping(data, itens);
       if (!itens.length) {
         root.appendChild(el("p", "galeria-status", "A mesa ainda está vazia. A redação espera a próxima indicação."));
         return;
