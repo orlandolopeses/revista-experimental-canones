@@ -222,7 +222,7 @@
 
   function markdown(d) {
     var secao = d.tipo === "indicacao" ? "indicacoes" : "pecas";
-    var nav = d.tipo === "indicacao" ? "videos" : "critica";
+    var nav = d.tipo === "indicacao" ? "indicacoes" : "critica";
     var linhas = [
       "---",
       'title: "' + d.title.replace(/"/g, '\\"') + '"',

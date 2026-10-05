@@ -911,6 +911,45 @@ nav.sections.is-stuck {
   line-height: 1.45;
 }
 
+.team h3 a {
+  text-decoration: none;
+}
+
+.team h3 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.team p.team-count {
+  margin-top: 0.7rem;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.continente {
+  display: grid;
+  grid-template-columns: minmax(0, 0.45fr) minmax(0, 1.55fr);
+  gap: 1rem 3rem;
+  margin-top: 2.4rem;
+  padding: 1.6rem 0 0.4rem;
+  border-top: 3px solid var(--ink);
+  scroll-margin-top: 4rem;
+}
+
+.continente-head h2 {
+  font-family: var(--display);
+  font-size: 1.7rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.continente .notes {
+  margin: 0 0 1.6rem;
+}
+
 .prose {
   font-family: var(--serif);
   font-size: 1.16rem;
@@ -1485,6 +1524,7 @@ footer.site {
   .slideshow,
   .grid-3,
   .teams,
+  .continente,
   .redacao,
   .footer-inner,
   .note-row,
