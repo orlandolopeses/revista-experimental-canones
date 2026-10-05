@@ -107,6 +107,26 @@ LISTAGENS: dict[str, dict[str, str]] = {
     },
 }
 
+EQUIPES = (
+    ("america-do-sul", "América do Sul",
+     "Português e espanhol em primeiro plano. Suplementos, revistas independentes, "
+     "universidades, o que circula como valor aqui perto."),
+    ("america-do-norte", "América do Norte",
+     "NYRB, n+1, magazines universitários, a indústria do review em inglês — e o que "
+     "essa indústria deixa de fora."),
+    ("europa", "Europa",
+     "O arquivo vivo: TLS, NRF, revistas alemãs, italianas, ibéricas. Herança que o "
+     "curso lê e, ao mesmo tempo, historiciza."),
+    ("africa", "África",
+     "Crítica em inglês, francês, português e árabe. Revistas pan-africanas, imprensa "
+     "de Lagos, Joanesburgo, Dacar, Maputo, Cairo."),
+    ("asia", "Ásia",
+     "Do Japão à Índia, da China ao mundo árabe asiático: onde o cânone ocidental "
+     "encontra outras máquinas de valor."),
+    ("oceania", "Oceania",
+     "Austrália, Aotearoa, Pacífico. Equipe ainda em formação — vaga aberta no cadastro."),
+)
+
 MD = markdown.Markdown(extensions=["extra", "sane_lists", "smarty"])
 
 
@@ -346,25 +366,24 @@ def piece_html(entry: dict[str, Any], prefix: str) -> str:
     return chrome(title, description, prefix, nav, main)
 
 
-def listing_html(secao: str, entries: list[dict[str, Any]], prefix: str) -> str:
-    info = LISTAGENS[secao]
-    rows = []
-    for entry in entries:
-        slug = entry["_slug"]
-        iso = entry.get("date") or ""
-        kicker = str(entry.get("kicker") or entry.get("eyebrow") or "")
-        resumo = str(entry.get("resumo") or entry.get("deck") or "")
-        title = str(entry.get("title") or slug)
-        rows.append(
-            f"""      <article class="note-row">
+def note_row(entry: dict[str, Any], href: str) -> str:
+    iso = entry.get("date") or ""
+    kicker = str(entry.get("kicker") or entry.get("eyebrow") or "")
+    resumo = str(entry.get("resumo") or entry.get("deck") or "")
+    title = str(entry.get("title") or entry["_slug"])
+    return f"""      <article class="note-row">
         <time datetime="{html.escape(iso)}">{html.escape(data_curta(iso))}</time>
         <div>
           <p class="note-kicker">{html.escape(kicker)}</p>
-          <h2><a href="{html.escape(slug)}.html">{html.escape(title)}</a></h2>
+          <h2><a href="{html.escape(href)}">{html.escape(title)}</a></h2>
           <p>{html.escape(resumo)}</p>
         </div>
       </article>"""
-        )
+
+
+def listing_html(secao: str, entries: list[dict[str, Any]], prefix: str) -> str:
+    info = LISTAGENS[secao]
+    rows = [note_row(entry, f"{entry['_slug']}.html") for entry in entries]
     main = f"""    <header class="page-intro">
       <p class="eyebrow">{html.escape(info["eyebrow"])}</p>
       <h1 class="page-title">{html.escape(info["title"])}</h1>
@@ -377,6 +396,67 @@ def listing_html(secao: str, entries: list[dict[str, Any]], prefix: str) -> str:
     return chrome(info["title"], info["description"], prefix, info["nav"], main)
 
 
+def equipes_html(publicadas: list[tuple[str, dict[str, Any]]]) -> str:
+    def da_equipe(nome: str) -> list[tuple[str, dict[str, Any]]]:
+        return [(secao, e) for secao, e in publicadas if str(e.get("equipe") or "").strip() == nome]
+
+    def contagem(n: int) -> str:
+        if n == 0:
+            return "Sem peça no ar ainda"
+        return "1 peça no ar" if n == 1 else f"{n} peças no ar"
+
+    cards = []
+    secoes = []
+    for slug, nome, descricao in EQUIPES:
+        pecas = da_equipe(nome)
+        titulo = f'<a href="#{slug}">{html.escape(nome)}</a>' if pecas else html.escape(nome)
+        cards.append(
+            f"""      <article class="team">
+        <h3>{titulo}</h3>
+        <p>{html.escape(descricao)}</p>
+        <p class="team-count">{contagem(len(pecas))}</p>
+      </article>"""
+        )
+        if not pecas:
+            continue
+        corpo = "\n".join(note_row(e, f"{secao}/{e['_slug']}.html") for secao, e in pecas)
+        secoes.append(
+            f"""    <section class="continente" id="{slug}" aria-labelledby="{slug}-titulo">
+      <header class="continente-head">
+        <p class="eyebrow">Equipe</p>
+        <h2 id="{slug}-titulo">{html.escape(nome)}</h2>
+      </header>
+      <div class="notes">
+{corpo}
+      </div>
+    </section>"""
+        )
+    main = f"""    <header class="page-intro">
+      <p class="eyebrow">Monitoramento</p>
+      <h1 class="page-title">Equipes de monitoramento de publicações de crítica literária</h1>
+      <p class="deck">O mapa saiu de uma enquete no grupo da turma: não para cobrir o planeta, e sim para treinar o olho onde a crítica se publica — revistas, cadernos, newsletters, blogs, podcasts, prêmios, dossiês.</p>
+    </header>
+
+    <div class="prose">
+      <p>Cada equipe devolve à redação o que viu: uma peça que importa, um gesto crítico reconhecível, uma ausência. O recorte continental é método, não destino. Os achados viram peça na <a href="redacao.html">mesa da redação</a>, e cada peça publicada aparece aqui, na seção da sua equipe.</p>
+    </div>
+
+    <div class="teams">
+{chr(10).join(cards)}
+    </div>
+
+{chr(10).join(secoes)}
+    <p class="prose"><a href="colaborar.html">Confirmar ou trocar de equipe no cadastro editorial →</a></p>
+"""
+    return chrome(
+        "Equipes",
+        "Equipes de monitoramento de publicações de crítica literária da revista experimental DLT13973.",
+        "",
+        "equipes",
+        main,
+    )
+
+
 def write(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8")
@@ -385,8 +465,11 @@ def write(path: Path, text: str) -> None:
 def build(site: Path) -> int:
     content = site / "conteudo"
     n = 0
+    publicadas: list[tuple[str, dict[str, Any]]] = []
     for secao in ("pecas", "sala", "indicacoes"):
         entries = load_entries(content / secao)
+        if secao != "sala":
+            publicadas.extend((secao, e) for e in entries)
         dest = site / secao
         dest.mkdir(parents=True, exist_ok=True)
         for entry in entries:
@@ -397,6 +480,10 @@ def build(site: Path) -> int:
         write(index, listing_html(secao, entries, prefix_for(index, site)))
         n += 1
         print(f"{secao}: {len(entries)} peças + índice", file=sys.stderr)
+    publicadas.sort(key=lambda item: item[1].get("date") or "", reverse=True)
+    write(site / "equipes.html", equipes_html(publicadas))
+    n += 1
+    print("equipes: página por continente", file=sys.stderr)
     return n
 
 
