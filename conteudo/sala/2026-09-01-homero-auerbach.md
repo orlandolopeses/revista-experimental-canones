@@ -15,4 +15,4 @@ O caso: Homero, *Odisseia*, canto XIX — o reconhecimento pela cicatriz. Não s
 
 Depois do intervalo, os grupos levaram o anteprojeto. Tempo de fala: sete minutos, mais três de perguntas. O dossiê de percurso continua individual. O que se apresentou em 01/09 é do grupo e entra nesta revista. Quem ainda não fez o [cadastro editorial](../colaborar.html) faz pela ficha; quem já está no cadastro escreve na [mesa da redação](../redacao.html).
 
-Produto no Dossiê: ficha do Laboratório 3. Anteprojeto do grupo, em cópia — não no original. Ponte: 15/09. [Todas as notas de sala →](index.html) · [Plano de curso →](https://docs.google.com/document/d/1I5Ybu2rNf_n_gFVQfd7LbW5SNqcljrD9nsHUGacFt9o/edit) · [Expediente →](../expediente.html)
+Produto no Dossiê: ficha do Laboratório 3. Anteprojeto do grupo, em cópia — não no original. Ponte: 22/09 (em 15/09 a turma foi liberada para o Congresso de Estudos Literários do PPGL). [Todas as notas de sala →](index.html) · [Plano de curso →](https://docs.google.com/document/d/1I5Ybu2rNf_n_gFVQfd7LbW5SNqcljrD9nsHUGacFt9o/edit) · [Expediente →](../expediente.html)
