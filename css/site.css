@@ -699,6 +699,59 @@ nav.sections.is-stuck {
   margin: 0 0 2rem;
 }
 
+.galeria-resumo {
+  margin: 0.9rem 0 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.galeria-resumo:empty {
+  display: none;
+}
+
+.galeria.is-clipping {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.2rem 1.6rem;
+  padding-top: 0.4rem;
+}
+
+.galeria.is-clipping .galeria-card h2 {
+  font-size: 1.14rem;
+  line-height: 1.22;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+}
+
+.galeria.is-clipping .galeria-card p:not(.eyebrow) {
+  font-size: 0.95rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+}
+
+.galeria.is-clipping .eyebrow {
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 0.74rem;
+  overflow-wrap: anywhere;
+}
+
+.section-label a {
+  text-decoration: none;
+}
+
+.section-label a:hover {
+  color: var(--accent-ink);
+  text-decoration: underline;
+}
+
 .galeria-hub {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1582,5 +1635,24 @@ footer.site {
 
   .slideshow-topics {
     margin-top: 1.5rem;
+  }
+
+  .galeria.is-clipping {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.8rem 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .galeria.is-clipping {
+    gap: 1.5rem 0.85rem;
+  }
+
+  .galeria.is-clipping .galeria-card h2 {
+    font-size: 0.98rem;
+  }
+
+  .galeria.is-clipping .galeria-card p:not(.eyebrow) {
+    display: none;
   }
 }

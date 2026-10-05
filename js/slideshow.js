@@ -3,6 +3,7 @@
   if (!root) return;
 
   var src = root.getAttribute("data-slideshow");
+  var arquivo = root.getAttribute("data-arquivo") || "clipping/index.html";
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var INTERVAL = 6500;
 
@@ -53,7 +54,7 @@
         return item && (item.cover || item.id);
       });
       if (!itens.length) {
-        root.replaceChildren(el("p", "galeria-status", "O arquivo da coleção ainda não carregou."));
+        root.replaceChildren(el("p", "galeria-status", "O clipping ainda não carregou."));
         return;
       }
 
@@ -96,12 +97,12 @@
 
       var archive = document.createElement("a");
       archive.className = "slideshow-more";
-      archive.href = "pecas/arquivo.html";
-      archive.textContent = "Ver os 34 recortes no arquivo";
+      archive.href = arquivo;
+      archive.textContent = "Ver os " + itens.length + " recortes no Clipping";
 
       var topics = el("aside", "slideshow-topics");
-      topics.setAttribute("aria-label", "Outros tópicos da coleção Crítica");
-      topics.appendChild(el("p", "eyebrow", "Outros tópicos"));
+      topics.setAttribute("aria-label", "Mais recortes da coleção Crítica");
+      topics.appendChild(el("p", "eyebrow", "Mais no clipping"));
       var topicsList = document.createElement("ul");
       topics.appendChild(topicsList);
 
@@ -120,14 +121,14 @@
       function show(i) {
         index = (i + itens.length) % itens.length;
         var item = itens[index];
-        var href = item.href || "pecas/arquivo.html";
+        var href = item.href || arquivo;
         img.src = coverUrl(item);
         media.href = href;
         media.setAttribute("aria-label", "Abrir o original de " + (item.kicker || "") + " no Instagram");
         titleLink.href = href;
         titleLink.textContent = item.titulo || item.kicker || "Coleção Crítica";
         eyebrow.textContent =
-          (item.kicker || "Arquivo") + (item.data ? " · " + formatDate(item.data) : "");
+          (item.kicker || "Clipping") + (item.data ? " · " + formatDate(item.data) : "");
         trecho.textContent = item.trecho || "";
         counter.textContent = pad(index + 1, itens.length) + " / " + itens.length;
         live.textContent = titleLink.textContent + ". " + (item.kicker || "");
@@ -211,7 +212,7 @@
     })
     .catch(function () {
       root.replaceChildren(
-        el("p", "galeria-status", "O slideshow não carregou. O arquivo completo está em Crítica.")
+        el("p", "galeria-status", "O slideshow não carregou. O clipping completo está na seção Clipping.")
       );
     });
 })();
