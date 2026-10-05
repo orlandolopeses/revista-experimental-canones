@@ -35,11 +35,10 @@ MESES = (
 SECOES = (
     ("edicao", "Edição zero", "index.html"),
     ("critica", "Crítica", "pecas/index.html"),
+    ("clipping", "Clipping", "clipping/index.html"),
     ("sala", "Sala", "sala/index.html"),
+    ("indicacoes", "Indicações", "indicacoes/index.html"),
     ("equipes", "Equipes", "equipes.html"),
-    ("radar", "Radar", "radar/index.html"),
-    ("videos", "Vídeos", "videos/index.html"),
-    ("podcasts", "Podcasts", "podcasts/index.html"),
     ("colaborar", "Colaborar", "colaborar.html"),
     ("expediente", "Expediente", "expediente.html"),
 )
@@ -91,7 +90,7 @@ LISTAGENS: dict[str, dict[str, str]] = {
             "internacional precisa dele agora."
         ),
         "description": "Indicações da Revista Experimental de Crítica Literária.",
-        "nav": "videos",
+        "nav": "indicacoes",
         "before": """<div class="galeria-hub">
       <a href="../videos/index.html">
         <p class="eyebrow">Tela</p>
