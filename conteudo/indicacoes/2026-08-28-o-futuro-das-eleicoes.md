@@ -16,6 +16,6 @@ origem: "https://youtu.be/Tz_AZ2NJjoQ"
 
 Uma turma que instala juízo — descrever, historicizar, avaliar — ainda imagina, por hábito, um público que lê. O neurocientista fala de outro: a urna de 2026 como alvo de uma ofensiva informacional simultânea, em todos os canais disponíveis. Quando o clip chega à redação, o gesto não é resumir a previsão. É reconhecer o chão: a crítica internacional circula no mesmo meio que recorta, acelera e homogeneíza o debate.
 
-A indicação não pede adesão ao alarme. Pede o vocabulário da turma diante do formato: o que o corte omite, quem autoriza o recorte, o que resta de esfera pública quando o juízo chega já montado. O Radar monitora veículos de crítica. Aqui a redação aponta um sinal que o feed literário trata como ruído de outra disciplina — e que, no entanto, descreve o meio em que a própria crítica agora se lê.
+A indicação não pede adesão ao alarme. Pede o vocabulário da turma diante do formato: o que o corte omite, quem autoriza o recorte, o que resta de esfera pública quando o juízo chega já montado. Aqui a redação aponta um sinal que a imprensa literária trata como ruído de outra disciplina — e que, no entanto, descreve o meio em que a própria crítica agora se lê.
 
 [Assistir no YouTube →](https://youtu.be/Tz_AZ2NJjoQ) · [Galeria de vídeos →](../videos/index.html)
