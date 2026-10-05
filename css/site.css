@@ -5,7 +5,7 @@
   --muted: #6e6458;
   --rule: #1a120c;
   --hair: #d9cdb8;
-  --accent: #c4452c;
+  --accent: #b33d27;
   --accent-ink: #8f2e1c;
   --sans: "Public Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --serif: "Newsreader", "Times New Roman", Times, serif;
@@ -1516,7 +1516,11 @@ footer.site {
   nav.sections a:first-child,
   nav.sections a:last-child,
   nav.sections a {
-    padding: 0.7rem 0.85rem;
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 0.7rem 0.5rem;
+    font-size: 0.66rem;
+    letter-spacing: 0.06em;
     margin-right: 0;
     border-right: 1px solid #3a3228;
   }
